@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+  <circle cx="50" cy="50" r="48" fill="#000000"/>
+  <g fill="#ccf381">
+    <!-- Main sparkle -->
+    <path d="M50 20 L54 46 L80 50 L54 54 L50 80 L46 54 L20 50 L46 46 Z"/>
+    <!-- Top right small sparkle -->
+    <path d="M70 25 L72 32 L79 34 L72 36 L70 43 L68 36 L61 34 L68 32 Z" transform="scale(0.6) translate(45, 10)"/>
+    <!-- Bottom left small sparkle -->
+    <path d="M30 65 L32 72 L39 74 L32 76 L30 83 L28 76 L21 74 L28 72 Z" transform="scale(0.5) translate(-10, 45)"/>
+  </g>
+</svg>
