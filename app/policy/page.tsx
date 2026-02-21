@@ -5,7 +5,7 @@ const PolicyPage = () => {
         <main className="min-h-screen bg-white text-gray-900 pt-24 pb-12">
             <div className="container mx-auto px-4 max-w-4xl">
                 <h1 className="text-4xl md:text-5xl font-bold mb-6 text-center bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-purple-600">
-                    Zenitho Policies
+                    sitein2days.online Policies
                 </h1>
 
                 <div className="flex justify-center mb-12">
@@ -28,7 +28,7 @@ const PolicyPage = () => {
 
                         <div className="space-y-6 text-gray-700">
                             <p>
-                                At <strong>Zenitho Labs</strong>, we are committed to transparency and the protection of your personal information. This Privacy Policy outlines how we collect, use, and safeguard the data you provide to us through our website and service interactions.
+                                At <strong>sitein2days.online</strong>, we are committed to transparency and the protection of your personal information. This Privacy Policy outlines how we collect, use, and safeguard the data you provide to us through our website and service interactions.
                             </p>
 
                             <div>
@@ -82,7 +82,7 @@ const PolicyPage = () => {
                                     <li>Object to processing of your personal data.</li>
                                     <li>Request restriction of processing your personal data.</li>
                                 </ul>
-                                <p className="mt-2">To exercise these rights, contact us at <a href="mailto:sales@zenitholabs.com" className="text-blue-600 hover:text-blue-500">sales@zenitholabs.com</a>.</p>
+                                <p className="mt-2">To exercise these rights, contact us at <a href="mailto:chaurasiawadh@gmail.com" className="text-blue-600 hover:text-blue-500">chaurasiawadh@gmail.com</a>.</p>
                             </div>
                         </div>
                     </section>
@@ -94,12 +94,12 @@ const PolicyPage = () => {
 
                         <div className="space-y-6 text-gray-700">
                             <p>
-                                These Terms and Conditions govern the professional relationship between <strong>Zenitho Labs</strong> (&quot;Agency&quot;) and the Client. By signing a Statement of Work (SOW) or paying an initial deposit, the Client agrees to be bound by these terms.
+                                These Terms and Conditions govern the professional relationship between <strong>sitein2days.online</strong> (&quot;Agency&quot;) and the Client. By signing a Statement of Work (SOW) or paying an initial deposit, the Client agrees to be bound by these terms.
                             </p>
 
                             <div>
                                 <h3 className="text-lg font-medium text-gray-900 mb-2">2.1 Scope of Services</h3>
-                                <p>Zenitho Labs provides digital product development, AI automation, and engineering services. The specific deliverables, timelines, and technical requirements will be outlined in a separate Statement of Work (SOW).</p>
+                                <p>sitein2days.online provides digital product development, AI automation, and engineering services. The specific deliverables, timelines, and technical requirements will be outlined in a separate Statement of Work (SOW).</p>
                             </div>
 
                             <div>
@@ -131,7 +131,7 @@ const PolicyPage = () => {
                             <div>
                                 <h3 className="text-lg font-medium text-gray-900 mb-2">2.5 Support and Warranty</h3>
                                 <ul className="list-disc list-inside mt-2 space-y-1 ml-4">
-                                    <li><strong>30-Day Support:</strong> Zenitho Labs provides a 30-day &quot;Stability Period&quot; post-launch. During this time, we will fix any bugs or errors that deviate from the agreed-upon SOW at no additional cost.</li>
+                                    <li><strong>30-Day Support:</strong> sitein2days.online provides a 30-day &quot;Stability Period&quot; post-launch. During this time, we will fix any bugs or errors that deviate from the agreed-upon SOW at no additional cost.</li>
                                     <li><strong>Exclusions:</strong> This support does not cover new features, third-party API changes, or issues caused by Client-side modifications to the code.</li>
                                 </ul>
                             </div>
@@ -146,7 +146,7 @@ const PolicyPage = () => {
                         <div className="space-y-6 text-gray-700">
                             <div>
                                 <h3 className="text-lg font-medium text-gray-900 mb-2">3.1 Non-Refundable Services</h3>
-                                <p>Zenitho Labs provides professional services involving significant manual labor, strategy, and resource allocation.</p>
+                                <p>sitein2days.online provides professional services involving significant manual labor, strategy, and resource allocation.</p>
                                 <ul className="list-disc list-inside mt-2 space-y-1 ml-4">
                                     <li><strong>Advance Payments:</strong> The initial 50% deposit is non-refundable. This fee covers the &quot;Vision to Scale&quot; discovery phase, resource booking, and initial architectural setup.</li>
                                     <li><strong>Completed Milestones:</strong> Once a milestone (e.g., UI/UX Design or Beta Version) has been presented to the Client, the associated payment is considered earned and non-refundable.</li>
@@ -157,7 +157,7 @@ const PolicyPage = () => {
                                 <h3 className="text-lg font-medium text-gray-900 mb-2">3.2 Timeline and Delivery Disclaimer</h3>
                                 <p>Software development is an iterative and complex process.</p>
                                 <ul className="list-disc list-inside mt-2 space-y-1 ml-4">
-                                    <li><strong>Estimates, Not Guarantees:</strong> Timelines provided are good-faith estimates. Zenitho Labs is not liable for refunds or penalties due to delays caused by technical complexity, third-party API limitations, or &quot;Force Majeure&quot; events.</li>
+                                    <li><strong>Estimates, Not Guarantees:</strong> Timelines provided are good-faith estimates. sitein2days.online is not liable for refunds or penalties due to delays caused by technical complexity, third-party API limitations, or &quot;Force Majeure&quot; events.</li>
                                     <li><strong>Discretionary Discounts:</strong> If a deadline is significantly missed due to Agency negligence, we may, at our sole discretion, offer a discount on the final milestone payment as a gesture of goodwill.</li>
                                 </ul>
                             </div>
@@ -167,7 +167,7 @@ const PolicyPage = () => {
                                 <p>In the event of a dispute regarding the quality of work:</p>
                                 <ol className="list-decimal list-inside mt-2 space-y-1 ml-4">
                                     <li>The Client must provide a detailed written list of items that do not meet the SOW requirements.</li>
-                                    <li>Zenitho Labs will have 14 days to remediate these issues.</li>
+                                    <li>sitein2days.online will have 14 days to remediate these issues.</li>
                                     <li>If the Client remains unsatisfied, both parties agree to attempt mediation before pursuing legal action.</li>
                                 </ol>
                             </div>
@@ -176,8 +176,8 @@ const PolicyPage = () => {
                                 <h3 className="text-lg font-medium text-gray-900 mb-4">3.4 Contact Information</h3>
                                 <p className="mb-2">For questions regarding refunds or cancellations, please contact our accounts department:</p>
                                 <ul className="space-y-2">
-                                    <li><strong>Email:</strong> <a href="mailto:sales@zenitholabs.com" className="text-blue-600 hover:text-blue-500">sales@zenitholabs.com</a></li>
-                                    <li><strong>Address:</strong> D-198, Road, Gurunanakpura, Raja Park, Jaipur, Rajasthan 302004</li>
+                                    <li><strong>Email:</strong> <a href="mailto:chaurasiawadh@gmail.com" className="text-blue-600 hover:text-blue-500">chaurasiawadh@gmail.com</a></li>
+                                    <li><strong>Address:</strong> Lanka BHU, Varanasi</li>
                                 </ul>
                             </div>
                         </div>

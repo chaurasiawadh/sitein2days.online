@@ -15,6 +15,6 @@ export async function submitProjectForm(prevState: State, formData: FormData): P
     // You can integrate with a third-party service like Formspree, Basin, or Netlify Forms
     return {
         success: false,
-        message: 'Form submission is disabled in static mode. Please email us directly at contact@zenitholabs.com'
+        message: 'Form submission is disabled in static mode. Please email us directly at chaurasiawadh@gmail.com'
     };
 }

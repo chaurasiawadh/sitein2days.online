@@ -308,7 +308,7 @@ export const CASE_STUDIES: CaseStudy[] = [
       "Full-stack Web App"
     ],
     image: "/assets/banner/liquidityio_banner.png",
-    testimonial: "Working with ZenithLabs felt like having an extension of our own team. They understood our vision immediately.",
+    testimonial: "Working with sitein2days.online felt like having an extension of our own team. They understood our vision immediately.",
     testimonialAuthor: "Product Lead, Liquidity.io",
     overview: "Liquidity.io is a digital marketplace and regulated ATS focused on giving investors access to private-market instruments with real-time tracking, price alerts and compliance-first flows. The product positions itself as a mobile-first, institutional-grade platform for secondary trading in private assets.",
     painPointsSolved: [
@@ -688,7 +688,7 @@ export const DIFFERENTIATORS: Differentiator[] = [
 export const TESTIMONIALS: Testimonial[] = [
   {
     id: 1,
-    quote: "Working with ZenithLabs felt like having an extension of our own team. They understood our vision immediately and delivered beyond expectations.",
+    quote: "Working with sitein2days.online felt like having an extension of our own team. They understood our vision immediately and delivered beyond expectations.",
     name: "Product Lead",
     position: "Liquidity.io",
     image: "https://picsum.photos/100/100?random=10",

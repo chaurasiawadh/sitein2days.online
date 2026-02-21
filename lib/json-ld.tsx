@@ -121,35 +121,35 @@ export type ArticleSchema = {
     dateModified?: string;
 };
 
-const BASE_URL = 'https://zenitholabs.com';
-const ORGANIZATION_NAME = 'Zenitho Labs';
+const BASE_URL = 'https://sitein2days.online';
+const ORGANIZATION_NAME = 'sitein2days.online';
 
 export function getOrganizationSchema(): OrganizationSchema {
     return {
         '@context': 'https://schema.org',
         '@type': 'Organization',
         name: ORGANIZATION_NAME,
-        legalName: 'Zenitho Labs', // Assuming similar legal name
+        legalName: 'sitein2days.online', // Assuming similar legal name
         url: BASE_URL,
         logo: `${BASE_URL}/icon.svg`,
-        description: 'Zenitho Labs automates business operations using AI agents and workflow orchestration. We save teams 20-40 hours/week by automating repetitive tasks.',
+        description: 'sitein2days.online automates business operations using AI agents and workflow orchestration. We save teams 20-40 hours/week by automating repetitive tasks.',
         contactPoint: [
             {
                 '@type': 'ContactPoint',
                 contactType: 'customer support',
-                email: 'hello@zenitholabs.com', // Placeholder, confirm if available
+                email: 'chaurasiawadh@gmail.com', // Placeholder, confirm if available
                 url: `${BASE_URL}/contact`,
             },
             {
                 '@type': 'ContactPoint',
                 contactType: 'sales',
-                email: 'sales@zenitholabs.com', // Placeholder
+                email: 'chaurasiawadh@gmail.com', // Placeholder
                 url: `${BASE_URL}/contact`,
             }
         ],
         sameAs: [
-            'https://twitter.com/zenitholabs', // Placeholder
-            'https://linkedin.com/company/zenitholabs' // Placeholder
+            'https://twitter.com/sitein2days', // Placeholder
+            'https://linkedin.com/company/sitein2days' // Placeholder
         ]
     };
 }

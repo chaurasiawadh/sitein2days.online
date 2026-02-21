@@ -7,17 +7,17 @@ import { ReactNode } from 'react';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata = {
-  title: 'Automate Your Ops: AI Agents & Workflow Orchestration | Zenitho Labs',
+  title: 'Automate Your Ops: AI Agents & Workflow Orchestration | sitein2days.online',
   description: 'Stop hiring for repetitive tasks. Our AI agents automate 75% of support tickets and manual workflows. See how we save teams 20-40 hrs/week.',
-  metadataBase: new URL('https://zenitholabs.com'),
+  metadataBase: new URL('https://sitein2days.online'),
   icons: {
     icon: '/icon.svg',
   },
   openGraph: {
-    title: 'Automate Your Ops: AI Agents & Workflow Orchestration | Zenitho Labs',
+    title: 'Automate Your Ops: AI Agents & Workflow Orchestration | sitein2days.online',
     description: 'Stop hiring for repetitive tasks. Our AI agents automate 75% of support tickets and manual workflows. See how we save teams 20-40 hrs/week.',
-    url: 'https://zenitholabs.com',
-    siteName: 'Zenitho Labs',
+    url: 'https://sitein2days.online',
+    siteName: 'sitein2days.online',
     locale: 'en_US',
     type: 'website',
     images: [
@@ -25,13 +25,13 @@ export const metadata = {
         url: '/opengraph-image.jpg?v=2',
         width: 1200,
         height: 630,
-        alt: 'Zenitho Labs - AI Automation & Workflow Orchestration',
+        alt: 'sitein2days.online - AI Automation & Workflow Orchestration',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Automate Your Ops: AI Agents & Workflow Orchestration | Zenitho Labs',
+    title: 'Automate Your Ops: AI Agents & Workflow Orchestration | sitein2days.online',
     description: 'Stop hiring for repetitive tasks. Our AI agents automate 75% of support tickets and manual workflows. See how we save teams 20-40 hrs/week.',
     images: ['/opengraph-image.jpg?v=2'],
   },

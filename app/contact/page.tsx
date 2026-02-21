@@ -139,7 +139,7 @@ export default function ContactPage() {
                             </h3>
                             <p className="text-white/90 text-sm mb-4">Get instant answers to your questions. We're active right now!</p>
                             <a
-                                href="https://wa.me/919680018108"
+                                href="https://wa.me/919936169852"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="block w-full bg-white text-[#25D366] text-center font-bold py-3 rounded-lg hover:bg-gray-100 transition-colors shadow-sm"
@@ -156,8 +156,8 @@ export default function ContactPage() {
                                     <Phone size={20} className="text-blue-600 mt-0.5 flex-shrink-0" />
                                     <div>
                                         <p className="text-xs text-gray-500 mb-1">Phone</p>
-                                        <a href="tel:+919680018108" className="text-gray-900 text-sm font-medium hover:text-blue-600 transition-colors">
-                                            +91-9680018108
+                                        <a href="tel:+919936169852" className="text-gray-900 text-sm font-medium hover:text-blue-600 transition-colors">
+                                            +91-9936169852
                                         </a>
                                     </div>
                                 </div>
@@ -168,8 +168,8 @@ export default function ContactPage() {
                                     <Mail size={20} className="text-blue-600 mt-0.5 flex-shrink-0" />
                                     <div>
                                         <p className="text-xs text-gray-500 mb-1">Email</p>
-                                        <a href="mailto:sales@zenitholabs.com" className="text-gray-900 text-sm font-medium hover:text-blue-600 transition-colors">
-                                            sales@zenitholabs.com
+                                        <a href="mailto:chaurasiawadh@gmail.com" className="text-gray-900 text-sm font-medium hover:text-blue-600 transition-colors">
+                                            chaurasiawadh@gmail.com
                                         </a>
                                     </div>
                                 </div>
@@ -190,13 +190,13 @@ export default function ContactPage() {
 
                             <div className="flex items-start gap-3 mb-6">
                                 <MapPin size={20} className="text-blue-600 mt-0.5 flex-shrink-0" />
-                                <p className="text-gray-900 text-sm font-medium">D-198, Road, Gurunanakpura, Raja Park, Jaipur, Rajasthan 302004</p>
+                                <p className="text-gray-900 text-sm font-medium">Lanka BHU, Varanasi</p>
                             </div>
 
-                            {/* Google Map Embed - Detailed map of Raja Park, Jaipur */}
+                            {/* Google Map Embed - Lanka, BHU Varanasi */}
                             <div className="rounded-lg overflow-hidden mb-4 h-48">
                                 <iframe
-                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3558.070183570399!2d75.8268498761066!3d26.89291187665893!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396db6864c803ddb%3A0xc39281a17966f362!2sRaja%20Park%2C%20Jaipur%2C%20Rajasthan%20302004!5e0!3m2!1sen!2sin!4v1704967345000!5m2!1sen!2sin"
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3602.123456789!2d82.9867!3d25.2677!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x398e2de0c3b5a5a5%3A0x0!2sLanka%2C%20Varanasi%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1704967345000!5m2!1sen!2sin"
                                     width="100%"
                                     height="100%"
                                     style={{ border: 0 }}
@@ -207,7 +207,7 @@ export default function ContactPage() {
                             </div>
 
                             <a
-                                href="https://maps.app.goo.gl/uDzob2X5PVTVBBCg7"
+                                href="https://maps.google.com/?q=Lanka+BHU+Varanasi"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="inline-flex items-center gap-2 text-blue-600 text-sm font-semibold hover:gap-3 transition-all"

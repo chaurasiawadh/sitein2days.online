@@ -119,7 +119,7 @@ export default function AdminDashboard({ submissions }: AdminDashboardProps) {
                     <div className="bg-[#ccf381] p-1.5 rounded-lg mr-3 shadow-[0_0_15px_rgba(204,243,129,0.3)]">
                         <Sparkles size={16} className="text-black" strokeWidth={2.5} />
                     </div>
-                    <span className="font-bold text-white text-lg tracking-tight">Zenitho<span className="font-normal text-gray-400">Labs</span></span>
+                    <span className="font-bold text-white text-lg tracking-tight">sitein2days.online</span>
                 </div>
 
                 {/* Navigation */}
@@ -169,7 +169,7 @@ export default function AdminDashboard({ submissions }: AdminDashboardProps) {
                         </div>
                         <div className="overflow-hidden">
                             <p className="text-sm font-semibold text-white truncate">Administrator</p>
-                            <p className="text-xs text-gray-400 truncate">admin@zenitholabs.com</p>
+                            <p className="text-xs text-gray-400 truncate">admin@sitein2days.online</p>
                         </div>
                     </div>
                     <form action={adminLogout}>

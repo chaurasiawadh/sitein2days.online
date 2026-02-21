@@ -92,7 +92,7 @@ export default function AdminLoginPage() {
                             <Sparkles size={16} fill="#ccf381" style={{ color: '#000' }} />
                         </div>
                         <span style={{ fontWeight: 900, fontSize: '18px', color: '#fff' }}>
-                            Zenitho<span style={{ color: '#888', fontWeight: 400 }}>Labs</span>
+                            sitein2days.online
                         </span>
                     </Link>
                 </div>
@@ -181,7 +181,7 @@ export default function AdminLoginPage() {
                                     name="email"
                                     type="email"
                                     autoComplete="email"
-                                    placeholder="admin@zenitholabs.com"
+                                    placeholder="admin@sitein2days.online"
                                     style={{
                                         width: '100%',
                                         padding: '10px 12px 10px 38px',
@@ -261,7 +261,7 @@ export default function AdminLoginPage() {
 
                 {/* Footer */}
                 <p style={{ textAlign: 'center', color: '#6b7280', fontSize: '11px', marginTop: '16px' }}>
-                    © {new Date().getFullYear()} ZenithoLabs
+                    © {new Date().getFullYear()} sitein2days.online
                 </p>
             </div>
         </div>

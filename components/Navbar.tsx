@@ -101,7 +101,7 @@ const Navbar: React.FC<NavbarProps> = ({ onOpenContact }) => {
                       <Sparkles size={16} fill="#ccf381" className="text-accent" />
                     </div>
                     <span className="font-black text-lg tracking-tight text-black">
-                      Zenitho<span className="text-gray-500 font-medium">Labs</span>
+                      sitein2days.online
                     </span>
                   </Link>
                 </motion.div>
@@ -125,7 +125,7 @@ const Navbar: React.FC<NavbarProps> = ({ onOpenContact }) => {
           {/* CTA Button */}
           <div className="hidden md:flex items-center">
             <a
-              href="https://wa.me/919680018108"
+              href="https://wa.me/919936169852"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-[#25D366] hover:bg-[#20BA5A] text-white px-6 py-2.5 rounded-full font-bold text-sm transition-all transform hover:-translate-y-0.5 hover:shadow-lg active:translate-y-0"
@@ -175,7 +175,7 @@ const Navbar: React.FC<NavbarProps> = ({ onOpenContact }) => {
                     <Sparkles size={16} fill="#ccf381" className="text-accent" />
                   </div>
                   <span className="font-black text-lg tracking-tight text-black">
-                    Zenitho<span className="text-gray-500 font-medium">Labs</span>
+                    sitein2days.online
                   </span>
                 </Link>
                 <button
@@ -207,7 +207,7 @@ const Navbar: React.FC<NavbarProps> = ({ onOpenContact }) => {
               {/* Mobile Drawer Footer / CTA */}
               <div className="mt-auto p-6 border-t border-gray-100">
                 <a
-                  href="https://wa.me/919680018108"
+                  href="https://wa.me/919936169852"
                   target="_blank"
                   rel="noopener noreferrer"
                   onClick={() => setIsOpen(false)}

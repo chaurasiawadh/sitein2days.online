@@ -1,7 +1,7 @@
 import { MetadataRoute } from 'next';
 import { CASE_STUDIES } from '@/constants';
 
-const BASE_URL = 'https://zenitholabs.com';
+const BASE_URL = 'https://sitein2days.online';
 
 export default function sitemap(): MetadataRoute.Sitemap {
     const currentDate = new Date().toISOString();

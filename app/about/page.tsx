@@ -23,7 +23,7 @@ const AboutPage = () => {
                         transition={{ duration: 0.5 }}
                         className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-50 border border-blue-100 text-blue-600 text-xs font-semibold uppercase tracking-wider mb-8"
                     >
-                        <SparklesIcon className="w-3 h-3" /> About Zenitho Labs
+                        <SparklesIcon className="w-3 h-3" /> About sitein2days.online
                     </motion.div>
 
                     <motion.h1
@@ -66,7 +66,7 @@ const AboutPage = () => {
                         </h2>
                         <div className="space-y-6 text-slate-600 text-lg leading-relaxed">
                             <p>
-                                Founded with a vision to bridge the gap between cutting-edge technology and practical business solutions, Zenitho Labs has grown into a trusted partner for companies looking to accelerate their digital transformation.
+                                Founded with a vision to bridge the gap between cutting-edge technology and practical business solutions, sitein2days.online has grown into a trusted partner for companies looking to accelerate their digital transformation.
                             </p>
                             <p>
                                 Our journey began with a simple belief: that great technology should be accessible, understandable, and tailored to solve real problems. Today, we've delivered 50+ successful projects across industries, from AI-powered platforms to blockchain solutions.
@@ -149,7 +149,7 @@ const AboutPage = () => {
     );
 };
 
-// Helper for the Sparkle icon in the "About Zenitho Labs" badge
+// Helper for the Sparkle icon in the "About sitein2days.online" badge
 function SparklesIcon(props: React.SVGProps<SVGSVGElement>) {
     return (
         <svg

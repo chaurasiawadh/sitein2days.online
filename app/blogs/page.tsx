@@ -9,8 +9,8 @@ export default function BlogsPage() {
     const placeholderArticle = {
         headline: 'Coming Soon: Comprehensive Guides on AI Automation',
         description: 'We are writing comprehensive guides on product development, AI automation, and growth strategies. Stay tuned!',
-        image: ['https://zenitholabs.com/opengraph-image.jpg'],
-        author: 'Zenitho Labs Team',
+        image: ['https://sitein2days.online/opengraph-image.jpg'],
+        author: 'sitein2days.online Team',
         datePublished: new Date().toISOString(),
     };
 

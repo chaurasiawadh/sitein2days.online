@@ -6,7 +6,7 @@ const Features: React.FC = () => {
     <section className="py-24 bg-white relative overflow-hidden border-t border-gray-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-3xl font-black text-black sm:text-4xl tracking-tight">Why companies trust Zenitho.</h2>
+          <h2 className="text-3xl font-black text-black sm:text-4xl tracking-tight">Why companies trust sitein2days.online</h2>
           <p className="mt-4 text-xl text-gray-500">
             We're not just another agency, we're your growth partner committed to your success.
           </p>

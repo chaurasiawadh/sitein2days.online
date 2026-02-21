@@ -5,12 +5,12 @@ import { ArrowRight, CheckCircle2, MessageSquare, Database, FileCode, BarChart3,
 
 export const metadata: Metadata = {
     title: 'AI Automation Services | Custom AI Agents & Workflow Automation',
-    description: 'Scale operations with Zenitho Labs\' AI automation services. We build custom AI agents using LangChain to automate support, data, and workflows. Save 40% on ops costs.',
+    description: 'Scale operations with sitein2days.online\' AI automation services. We build custom AI agents using LangChain to automate support, data, and workflows. Save 40% on ops costs.',
     openGraph: {
-        title: 'Automate Your Biz: AI Agents for Support & Ops | Zenitho Labs',
+        title: 'Automate Your Biz: AI Agents for Support & Ops | sitein2days.online',
         description: 'Stop hiring for repetitive tasks. Our AI agents automate 75% of support tickets and manual workflows. See how much you can save.',
         url: '/services/ai-automation',
-        siteName: 'Zenitho Labs',
+        siteName: 'sitein2days.online',
         locale: 'en_US',
         type: 'website',
         images: [
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
                 url: '/opengraph-image.jpg?v=2',
                 width: 1200,
                 height: 630,
-                alt: 'Zenitho Labs AI Automation Services',
+                alt: 'sitein2days.online AI Automation Services',
             },
         ],
     },
@@ -30,8 +30,8 @@ const jsonLd = {
     serviceType: 'AI Automation Services',
     provider: {
         '@type': 'Organization',
-        name: 'Zenitho Labs',
-        url: 'https://zenitholabs.com'
+        name: 'sitein2days.online',
+        url: 'https://sitein2days.online'
     },
     areaServed: 'Worldwide',
     description: 'Custom AI automation services using LangChain and LangGraph to build autonomous agents for customer support and workflow orchestration.',

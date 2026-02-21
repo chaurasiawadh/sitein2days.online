@@ -13,21 +13,21 @@ const Footer: React.FC = () => {
             <h4 className="font-bold text-base mb-6 text-black">Contact</h4>
             <ul className="space-y-4">
               <li>
-                <a href="tel:+919680018108" className="flex items-start gap-3 text-gray-600 text-sm hover:text-black transition-colors group">
+                <a href="tel:+919936169852" className="flex items-start gap-3 text-gray-600 text-sm hover:text-black transition-colors group">
                   <Phone size={16} className="mt-0.5 flex-shrink-0" />
-                  <span>+91-9680018108</span>
+                  <span>+91-9936169852</span>
                 </a>
               </li>
               <li>
                 <div className="flex items-start gap-3 text-gray-600 text-sm">
                   <MapPin size={16} className="mt-0.5 flex-shrink-0" />
-                  <span>D-198, Road, Gurunanakpura, Raja Park, Jaipur, Rajasthan 302004</span>
+                  <span>Lanka BHU, Varanasi</span>
                 </div>
               </li>
               <li>
-                <a href="mailto:sales@zenitholabs.com" className="flex items-start gap-3 text-gray-600 text-sm hover:text-black transition-colors group">
+                <a href="mailto:chaurasiawadh@gmail.com" className="flex items-start gap-3 text-gray-600 text-sm hover:text-black transition-colors group">
                   <Mail size={16} className="mt-0.5 flex-shrink-0" />
-                  <span>sales@zenitholabs.com</span>
+                  <span>chaurasiawadh@gmail.com</span>
                 </a>
               </li>
             </ul>
@@ -85,7 +85,7 @@ const Footer: React.FC = () => {
               <Sparkles size={14} fill="#ccf381" className="text-accent" />
             </div>
             <p className="text-[10px] text-gray-500">
-              © 2026 <span className="font-semibold text-gray-700">Zenitho Labs</span>. All rights reserved.
+              © 2026 <span className="font-semibold text-gray-700">sitein2days.online</span>. All rights reserved.
             </p>
           </div>
           <div className="flex gap-8 text-[10px] text-gray-500">

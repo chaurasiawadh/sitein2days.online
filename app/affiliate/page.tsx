@@ -13,7 +13,7 @@ export default function AffiliatePage() {
                     <div className="inline-flex items-center justify-center w-20 h-20 bg-black rounded-full text-accent mb-8 shadow-xl">
                         <Share2 size={36} />
                     </div>
-                    <h1 className="text-5xl md:text-7xl font-black text-black mb-8 leading-tight">Refer & Earn: <br />Partner with Zenitho Labs</h1>
+                    <h1 className="text-5xl md:text-7xl font-black text-black mb-8 leading-tight">Refer & Earn: <br />Partner with sitein2days.online</h1>
                     <p className="text-2xl text-gray-500 font-medium max-w-2xl mx-auto">
                         Know someone who needs our help? Get rewarded for making meaningful connections.
                     </p>
@@ -30,7 +30,7 @@ export default function AffiliatePage() {
                                 <div className="w-12 h-12 rounded-full bg-gray-100 flex items-center justify-center font-black text-xl flex-shrink-0">1</div>
                                 <div>
                                     <h4 className="font-bold text-xl mb-2">Refer a client</h4>
-                                    <p className="text-gray-600">Share ZenithLabs with your network.</p>
+                                    <p className="text-gray-600">Share sitein2days.online with your network.</p>
                                 </div>
                             </div>
                             <div className="flex gap-6">
@@ -74,7 +74,7 @@ export default function AffiliatePage() {
                 <div className="bg-black text-white p-12 md:p-16 rounded-[3rem] relative overflow-hidden text-center mb-20">
                     <div className="absolute top-0 left-0 w-64 h-64 bg-accent/20 rounded-full blur-[100px]"></div>
                     <div className="relative z-10">
-                        <h2 className="text-4xl font-black mb-12">Why Refer ZenithLabs?</h2>
+                        <h2 className="text-4xl font-black mb-12">Why Refer sitein2days.online?</h2>
                         <div className="grid md:grid-cols-3 gap-8 text-left">
                             <div className="bg-white/10 p-8 rounded-3xl backdrop-blur-sm border border-white/10">
                                 <CheckCircle className="text-accent mb-6" size={32} />
@@ -95,11 +95,11 @@ export default function AffiliatePage() {
                 {/* Contact CTA */}
                 <div className="text-center max-w-2xl mx-auto">
                     <h2 className="text-3xl font-black mb-6">Interested in our affiliate program?</h2>
-                    <a href="mailto:sales@zenitholabs.com?subject=Affiliate%20Partnership" className="inline-flex items-center gap-3 bg-black text-white px-8 py-5 rounded-full font-bold text-lg hover:scale-105 transition-all shadow-xl hover:shadow-2xl">
+                    <a href="mailto:chaurasiawadh@gmail.com?subject=Affiliate%20Partnership" className="inline-flex items-center gap-3 bg-black text-white px-8 py-5 rounded-full font-bold text-lg hover:scale-105 transition-all shadow-xl hover:shadow-2xl">
                         <Mail /> Email us to Join
                     </a>
                     <p className="mt-6 text-gray-500 font-medium">
-                        Email us at <span className="text-black font-bold">sales@zenitholabs.com</span> with "Affiliate Partnership" in the subject line.
+                        Email us at <span className="text-black font-bold">chaurasiawadh@gmail.com</span> with "Affiliate Partnership" in the subject line.
                     </p>
                 </div>
 
