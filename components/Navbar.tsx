@@ -97,7 +97,7 @@ const Navbar: React.FC<NavbarProps> = ({ onOpenContact }) => {
                   transition={{ duration: 0.4, ease: [0.16, 1, 0.3, 1] }}
                 >
                   <Link href="/" className="flex items-center group z-50">
-                    <img src="/logo-large.png" alt="sitein2days.online logo" className="h-10 w-auto object-contain transition-transform duration-300 group-hover:scale-105" />
+                    <img src="/logo-large.png" alt="sitein2days.online logo" className="h-10 w-auto scale-[5] ml-[120px] object-contain transition-transform duration-300 group-hover:scale-105" />
                   </Link>
                 </motion.div>
               )}
