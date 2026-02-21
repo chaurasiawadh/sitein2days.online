@@ -1065,6 +1065,9 @@ video {
 .w-px {
   width: 1px;
 }
+.w-auto {
+  width: auto;
+}
 .min-w-0 {
   min-width: 0px;
 }
@@ -1892,6 +1895,10 @@ video {
 }
 .stroke-gray-300 {
   stroke: #D1D5DB;
+}
+.object-contain {
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .object-cover {
   -o-object-fit: cover;

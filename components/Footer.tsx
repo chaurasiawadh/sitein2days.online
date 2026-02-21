@@ -81,9 +81,7 @@ const Footer: React.FC = () => {
         {/* Bottom Bar */}
         <div className="flex flex-col md:flex-row justify-between items-center gap-4 pt-8 border-t border-gray-200">
           <div className="flex items-center gap-2">
-            <div className="bg-black p-1.5 rounded-full">
-              <img src="/icon.svg?368bed49bb332011" alt="logo" width={14} height={14} />
-            </div>
+            <img src="/logo-small.png" alt="logo" width={28} height={28} className="object-contain" />
             <p className="text-[10px] text-gray-500">
               © 2026 <span className="font-semibold text-gray-700">sitein2days.online</span>. All rights reserved.
             </p>

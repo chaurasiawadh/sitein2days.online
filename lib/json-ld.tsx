@@ -131,7 +131,7 @@ export function getOrganizationSchema(): OrganizationSchema {
         name: ORGANIZATION_NAME,
         legalName: 'sitein2days.online', // Assuming similar legal name
         url: BASE_URL,
-        logo: `${BASE_URL}/icon.svg`,
+        logo: `${BASE_URL}/logo-small.png`,
         description: 'sitein2days.online automates business operations using AI agents and workflow orchestration. We save teams 20-40 hours/week by automating repetitive tasks.',
         contactPoint: [
             {
@@ -244,7 +244,7 @@ export function getArticleSchema(article: { headline: string; description: strin
             name: ORGANIZATION_NAME,
             logo: {
                 '@type': 'ImageObject',
-                url: `${BASE_URL}/icon.svg`,
+                url: `${BASE_URL}/logo-small.png`,
             },
         },
         datePublished: article.datePublished,
