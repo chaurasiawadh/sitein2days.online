@@ -13,7 +13,7 @@ const Stats: React.FC = () => {
             icon: Handshake,
             value: "Partners",
             label: "Strategic Partnerships",
-            desc: "Official partners with Marchain.io & BerryFlow.io"
+            desc: "Strategic partnerships with innovative startups"
         },
         {
             icon: Zap,

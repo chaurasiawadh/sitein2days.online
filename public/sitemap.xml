@@ -87,19 +87,7 @@
     <priority>0.7</priority>
   </url>
 
-  <url>
-    <loc>https://zenitholabs.com/portfolio/berryflow-io/</loc>
-    <lastmod>2026-01-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
 
-  <url>
-    <loc>https://zenitholabs.com/portfolio/marchain-io/</loc>
-    <lastmod>2026-01-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
 
   <url>
     <loc>https://zenitholabs.com/portfolio/definable-ai/</loc>

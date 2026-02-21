@@ -71,9 +71,9 @@ const Footer: React.FC = () => {
             <h4 className="font-bold text-base mb-6 text-black">Follow Us</h4>
             <ul className="space-y-3">
               <li><a href="https://www.facebook.com/profile.php?id=61584194138421" target="_blank" rel="noopener noreferrer" className="text-gray-600 text-sm hover:text-black transition-colors">Facebook</a></li>
-              <li><a href="https://www.instagram.com/marchain.io/" target="_blank" rel="noopener noreferrer" className="text-gray-600 text-sm hover:text-black transition-colors">Instagram</a></li>
-              <li><a href="https://www.linkedin.com/company/marchain/?viewAsMember=true" target="_blank" rel="noopener noreferrer" className="text-gray-600 text-sm hover:text-black transition-colors">LinkedIn</a></li>
-              <li><a href="https://x.com/MarchainIo" target="_blank" rel="noopener noreferrer" className="text-gray-600 text-sm hover:text-black transition-colors">Twitter</a></li>
+              <li><a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" className="text-gray-600 text-sm hover:text-black transition-colors">Instagram</a></li>
+              <li><a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" className="text-gray-600 text-sm hover:text-black transition-colors">LinkedIn</a></li>
+              <li><a href="https://x.com/" target="_blank" rel="noopener noreferrer" className="text-gray-600 text-sm hover:text-black transition-colors">Twitter</a></li>
             </ul>
           </div>
         </div>

@@ -338,93 +338,6 @@ export const CASE_STUDIES: CaseStudy[] = [
     websiteLink: "https://liquidity.io/"
   },
   {
-    id: 2,
-    slug: "berryflow-io",
-    client: "BerryFlow.io",
-    industry: "SaaS & Marketing Technology",
-    services: ["Custom AI Development", "AI Integration", "Growth Strategy"],
-    challenge: "Marketers needed to move faster with content creation.",
-    solution: "End-to-end content automation platform with intelligent workflows, document libraries, and creative tools.",
-    results: [
-      "AI Content Creation",
-      "SaaS Platform",
-      "Intelligent Workflows",
-      "Streamlined Ops"
-    ],
-    image: "/assets/banner/berryflowio_screenshot.png",
-    testimonial: "The AI automation they built saved us 20+ hours per week. It paid for itself in the first month.",
-    testimonialAuthor: "Marketing Director, BerryFlow",
-    overview: "Berry provides an AI-powered Customer Success platform (AI CSM) that automates onboarding, support, training, and internal co-pilot functions to scale post-sales operations without proportional headcount increases.",
-    painPointsSolved: [
-      "Scaling white-glove onboarding and support without hiring more CSMs",
-      "Knowledge retention and consistent execution of CS playbooks",
-      "Ticket deflection and training at scale"
-    ],
-    userPersonas: [
-      "VP/Head of Customer Success in enterprise SaaS companies",
-      "CS managers wanting to reduce time-to-value and improve NRR",
-      "Product teams seeking to reduce support overhead"
-    ],
-    marketSize: {
-      tam: "$5–15B+ (Global customer success & post-sales software market)",
-      sam: "$500M–$2B (AI CSM platforms for mid-to-large SaaS)",
-      som: "$5–50M (Initial enterprise deployments)"
-    },
-    techStack: {
-      frontend: "React/Next.js",
-      backend: "Node/Python",
-      integrations: "Vector DB (Pinecone/Weaviate), LLM orchestration, Zendesk/Gainsight integrations"
-    },
-    buildTimeline: "Product MVP: 4–8 months. Enterprise-grade security & workflows: 9–18 months.",
-    resourcesNeeded: "3–5 backend, 2 frontend, 2 ML/AI, 1 pre-sales, 1 product, 1 designer.",
-    analyticsSetup: "Product analytics (deflection), CS metrics (TTV, NRR), integration dashboards.",
-    marketingEfforts: "Enterprise demo/bookings, content for CS leaders, outbound/partnerships with CRM vendors.",
-    websiteLink: "https://liquidity.io/"
-  },
-  {
-    id: 3,
-    slug: "marchain-io",
-    client: "Marchain.io",
-    industry: "Blockchain & Web3",
-    services: ["Technical Development", "Strategic Partnership", "Infrastructure"],
-    challenge: "Requires robust blockchain infrastructure and web3 solutions.",
-    solution: "Strategic partnership delivering technical development and next-gen decentralized applications.",
-    results: [
-      "Blockchain Infra",
-      "Web3 Solutions",
-      "Strategic Partnership",
-      "Decentralized Apps"
-    ],
-    image: "/assets/banner/marchainio_screenshot.png",
-    testimonial: "From strategy to deployment, they handled everything. Best decision we made for our product.",
-    testimonialAuthor: "CTO, Marchain.io",
-    overview: "Marchain.io is a product-building and growth platform focused on helping entrepreneurs build products fast: weekly insights, no-code tools, 1:1 guidance, automation services and courses for founders and builders.",
-    painPointsSolved: [
-      "Slow product discovery & execution for founders",
-      "Confusion over tool selection and no-code automation",
-      "Need for mentorship and execution templates"
-    ],
-    userPersonas: [
-      "Early founders & solo entrepreneurs wanting fast prototyping",
-      "Product managers seeking templates and coaching",
-      "Small agencies and solopreneurs who want automation"
-    ],
-    marketSize: {
-      tam: "$20–60B (Global online learning / creator economy)",
-      sam: "$500M–$2B (Founders/product professionals in English markets + India)",
-      som: "₹5–50M INR (Niche premium newsletter/coaching)"
-    },
-    techStack: {
-      frontend: "Next.js / static site / Substack",
-      other: "Gumroad/Stripe, Zapier/Make/n8n for automations"
-    },
-    buildTimeline: "Basic presence: 2–6 weeks. Automation services & courses: 2–6 months.",
-    resourcesNeeded: "1–2 dev/automation engineers, content creator, community manager, designer.",
-    analyticsSetup: "Newsletter metrics, Google Analytics, cohort retention.",
-    marketingEfforts: "Content marketing (blog), Instagram presence, productized services, 1:1 guidance upsells.",
-    websiteLink: "https://marchain.io/"
-  },
-  {
     id: 4,
     slug: "definable-ai",
     client: "Definable.ai",
@@ -698,7 +611,7 @@ export const TESTIMONIALS: Testimonial[] = [
     id: 2,
     quote: "The AI automation they built saved us 20+ hours per week. It paid for itself in the first month.",
     name: "Marketing Director",
-    position: "BerryFlow.io",
+    position: "Arthik.money",
     image: "https://picsum.photos/100/100?random=11",
     rating: 5
   },
@@ -706,7 +619,7 @@ export const TESTIMONIALS: Testimonial[] = [
     id: 3,
     quote: "From strategy to deployment, they handled everything. Best decision we made for our product.",
     name: "CTO",
-    position: "Marchain.io",
+    position: "Definable.ai",
     image: "https://picsum.photos/100/100?random=12",
     rating: 4
   }
