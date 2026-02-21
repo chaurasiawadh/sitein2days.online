@@ -11,7 +11,7 @@ export const metadata = {
   description: 'Stop hiring for repetitive tasks. Our AI agents automate 75% of support tickets and manual workflows. See how we save teams 20-40 hrs/week.',
   metadataBase: new URL('https://sitein2days.online'),
   icons: {
-    icon: '/icon.svg',
+    icon: '/icon.png',
   },
   openGraph: {
     title: 'Automate Your Ops: AI Agents & Workflow Orchestration | sitein2days.online',
@@ -74,7 +74,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
             (function(){
             var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
             s1.async=true;
-            s1.src='https://embed.tawk.to/696368517c8bd319796accab/1jem4v0jc';
+            s1.src='https://embed.tawk.to/6999d3cf3614221c3644ab47/1ji0e6pcq';
             s1.charset='UTF-8';
             s1.setAttribute('crossorigin','*');
             s0.parentNode.insertBefore(s1,s0);
@@ -85,4 +85,3 @@ export default function RootLayout({ children }: { children: ReactNode }) {
     </html>
   );
 }
-

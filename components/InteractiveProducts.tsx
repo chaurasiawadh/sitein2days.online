@@ -5,13 +5,6 @@ import Link from 'next/link';
 const InteractiveProducts: React.FC = () => {
     const products = [
         {
-            name: "BerryFlow.io",
-            desc: "Content automation platform with AI-powered workflows.",
-            action: "Try the Quick Create feature",
-            slug: "berryflow-io",
-            color: "bg-purple-100 text-purple-900 border-purple-200"
-        },
-        {
             name: "Liquidity.io",
             desc: "Complete marketing automation suite with 12+ tools.",
             action: "Explore the dashboard",
@@ -19,11 +12,18 @@ const InteractiveProducts: React.FC = () => {
             color: "bg-blue-100 text-blue-900 border-blue-200"
         },
         {
-            name: "Marchain.io",
-            desc: "Blockchain infrastructure platform.",
-            action: "Witness enterprise-grade web3",
-            slug: "marchain-io",
-            color: "bg-lime-100 text-lime-900 border-lime-200"
+            name: "Definable.ai",
+            desc: "AI-powered platform for smarter business decisions.",
+            action: "Explore AI intelligence",
+            slug: "definable-ai",
+            color: "bg-purple-100 text-purple-900 border-purple-200"
+        },
+        {
+            name: "Arthik.money",
+            desc: "AI-powered personal finance and expense manager.",
+            action: "Explore smart finance",
+            slug: "arthik-money",
+            color: "bg-green-100 text-green-900 border-green-200"
         }
     ];
 

@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useState, useEffect } from 'react';
-import { Menu, X, Sparkles, ArrowRight, ArrowLeft } from 'lucide-react';
+import { Menu, X, ArrowRight, ArrowLeft } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
@@ -96,13 +96,8 @@ const Navbar: React.FC<NavbarProps> = ({ onOpenContact }) => {
                   exit={{ opacity: 0, y: 10, filter: "blur(4px)" }}
                   transition={{ duration: 0.4, ease: [0.16, 1, 0.3, 1] }}
                 >
-                  <Link href="/" className="flex items-center gap-2 group z-50">
-                    <div className="bg-black p-1.5 rounded-full text-white group-hover:rotate-12 transition-transform duration-300">
-                      <Sparkles size={16} fill="#ccf381" className="text-accent" />
-                    </div>
-                    <span className="font-black text-lg tracking-tight text-black">
-                      sitein2days.online
-                    </span>
+                  <Link href="/" className="flex items-center group z-50">
+                    <img src="/logo-large.png" alt="sitein2days.online logo" className="h-10 w-auto object-contain transition-transform duration-300 group-hover:scale-105" />
                   </Link>
                 </motion.div>
               )}
@@ -170,13 +165,8 @@ const Navbar: React.FC<NavbarProps> = ({ onOpenContact }) => {
             >
               {/* Mobile Drawer Header */}
               <div className="flex items-center justify-between p-6 border-b border-gray-100">
-                <Link href="/" className="flex items-center gap-2" onClick={() => setIsOpen(false)}>
-                  <div className="bg-black p-1.5 rounded-full text-white">
-                    <Sparkles size={16} fill="#ccf381" className="text-accent" />
-                  </div>
-                  <span className="font-black text-lg tracking-tight text-black">
-                    sitein2days.online
-                  </span>
+                <Link href="/" className="flex items-center" onClick={() => setIsOpen(false)}>
+                  <img src="/logo-large.png" alt="sitein2days.online logo" className="h-10 w-auto object-contain" />
                 </Link>
                 <button
                   onClick={() => setIsOpen(false)}

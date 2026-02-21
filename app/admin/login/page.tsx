@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { useFormState, useFormStatus } from 'react-dom';
-import { Loader2, Sparkles, Lock, Mail, AlertCircle } from 'lucide-react';
+import { Loader2, Lock, Mail, AlertCircle } from 'lucide-react';
 import { adminLogin } from '../actions';
 import Link from 'next/link';
 
@@ -89,7 +89,7 @@ export default function AdminLoginPage() {
                                 justifyContent: 'center',
                             }}
                         >
-                            <Sparkles size={16} fill="#ccf381" style={{ color: '#000' }} />
+                            <img src="/icon.svg?368bed49bb332011" alt="logo" width={16} height={16} />
                         </div>
                         <span style={{ fontWeight: 900, fontSize: '18px', color: '#fff' }}>
                             sitein2days.online

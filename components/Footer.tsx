@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { Sparkles, Phone, MapPin, Mail, Linkedin, Twitter, Facebook, Instagram } from 'lucide-react';
+import { Phone, MapPin, Mail, Linkedin, Twitter, Facebook, Instagram } from 'lucide-react';
 
 const Footer: React.FC = () => {
   return (
@@ -71,9 +71,9 @@ const Footer: React.FC = () => {
             <h4 className="font-bold text-base mb-6 text-black">Follow Us</h4>
             <ul className="space-y-3">
               <li><a href="https://www.facebook.com/profile.php?id=61584194138421" target="_blank" rel="noopener noreferrer" className="text-gray-600 text-sm hover:text-black transition-colors">Facebook</a></li>
-              <li><a href="https://www.instagram.com/marchain.io/" target="_blank" rel="noopener noreferrer" className="text-gray-600 text-sm hover:text-black transition-colors">Instagram</a></li>
-              <li><a href="https://www.linkedin.com/company/marchain/?viewAsMember=true" target="_blank" rel="noopener noreferrer" className="text-gray-600 text-sm hover:text-black transition-colors">LinkedIn</a></li>
-              <li><a href="https://x.com/MarchainIo" target="_blank" rel="noopener noreferrer" className="text-gray-600 text-sm hover:text-black transition-colors">Twitter</a></li>
+              <li><a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" className="text-gray-600 text-sm hover:text-black transition-colors">Instagram</a></li>
+              <li><a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" className="text-gray-600 text-sm hover:text-black transition-colors">LinkedIn</a></li>
+              <li><a href="https://x.com/" target="_blank" rel="noopener noreferrer" className="text-gray-600 text-sm hover:text-black transition-colors">Twitter</a></li>
             </ul>
           </div>
         </div>
@@ -81,9 +81,7 @@ const Footer: React.FC = () => {
         {/* Bottom Bar */}
         <div className="flex flex-col md:flex-row justify-between items-center gap-4 pt-8 border-t border-gray-200">
           <div className="flex items-center gap-2">
-            <div className="bg-black p-1.5 rounded-full">
-              <Sparkles size={14} fill="#ccf381" className="text-accent" />
-            </div>
+            <img src="/logo-small.png" alt="logo" width={28} height={28} className="object-contain" />
             <p className="text-[10px] text-gray-500">
               © 2026 <span className="font-semibold text-gray-700">sitein2days.online</span>. All rights reserved.
             </p>
