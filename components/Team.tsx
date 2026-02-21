@@ -16,20 +16,39 @@ interface TeamMember {
 const Team: React.FC = () => {
     const teamMembers: TeamMember[] = [
         {
+            name: "Awadhesh Chaurasia",
+            role: "Engineering",
+            experience: "6+",
+            image: "/team/awadhesh-chaurasia.png",
+            linkedin: "https://www.linkedin.com/in/chaurasiawadh/"
+        }, {
+            name: "Rahul Srivastava",
+            role: "AI Expert",
+            experience: "6+",
+            image: "/team/rahul-srivastava.png",
+            linkedin: "https://www.linkedin.com/in/stv-rahul/"
+        },
+        {
             name: "Marshal Tavakar",
-            role: "Director of Product",
+            role: "Marketing Expert",
             experience: "10+",
             image: "/team/marshal-tavakar.png",
             linkedin: "https://www.linkedin.com/in/marshal-tavakar/"
         },
         {
-            name: "Awadhesh Chaurasia",
-            role: "Engineering Manager",
-            experience: "6+",
-            image: "/team/awadhesh-chaurasia.png",
-            linkedin: "https://www.linkedin.com/in/chaurasiawadh/"
+            name: "Shahbaaz Ali",
+            role: "Mobile App Development",
+            experience: "5+",
+            image: "/team/shahbaaz-ali.png",
+            linkedin: "https://www.linkedin.com/in/shahbaaz-ali-77166417a/"
         },
         {
+            name: "Abhay Chaurasia",
+            role: "E-commerce and Digital Marketing",
+            experience: "6+",
+            image: "/team/abhay-chaurasia.png",
+            linkedin: "https://www.linkedin.com/in/abhay-chaurasia-292a82255/"
+        }, {
             name: "Pratham Srivastava",
             role: "AI Expert",
             experience: "4+",
@@ -42,13 +61,6 @@ const Team: React.FC = () => {
             experience: "5+",
             image: "/team/tanvi-gupta.png",
             linkedin: "https://www.linkedin.com/in/tanvi-gupta-44398a192/"
-        },
-        {
-            name: "Ravee Chaudhary",
-            role: "Senior Data Scientist",
-            experience: "12+",
-            image: "/team/ravi.png",
-            linkedin: "https://www.linkedin.com/in/ravee-chaudhary/"
         }
     ];
 
