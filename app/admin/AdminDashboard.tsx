@@ -115,11 +115,10 @@ export default function AdminDashboard({ submissions }: AdminDashboardProps) {
             {/* Sidebar - Fixed Width, Fixed Styling */}
             <aside className="w-64 flex-shrink-0 bg-gray-900 text-gray-200 flex flex-col h-full shadow-xl z-20">
                 {/* Logo Area */}
-                <div className="h-16 flex items-center px-6 bg-black border-b border-white/10">
-                    <div className="bg-[#ccf381] p-1.5 rounded-lg mr-3 shadow-[0_0_15px_rgba(204,243,129,0.3)]">
-                        <img src="/icon.svg?368bed49bb332011" alt="logo" width={16} height={16} />
+                <div className="h-16 flex items-center px-4 bg-black border-b border-white/10">
+                    <div className="bg-white px-3 py-2 rounded-lg flex items-center justify-center w-full h-10">
+                        <img src="/logo-large.png" alt="sitein2days.online logo" className="h-full w-auto object-contain" />
                     </div>
-                    <span className="font-bold text-white text-lg tracking-tight">sitein2days.online</span>
                 </div>
 
                 {/* Navigation */}

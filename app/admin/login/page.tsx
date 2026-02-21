@@ -75,25 +75,21 @@ export default function AdminLoginPage() {
                         style={{
                             display: 'inline-flex',
                             alignItems: 'center',
-                            gap: '8px',
                             textDecoration: 'none',
                         }}
                     >
                         <div
                             style={{
                                 backgroundColor: '#fff',
-                                padding: '6px',
-                                borderRadius: '50%',
+                                padding: '8px 16px',
+                                borderRadius: '8px',
                                 display: 'flex',
                                 alignItems: 'center',
                                 justifyContent: 'center',
                             }}
                         >
-                            <img src="/icon.svg?368bed49bb332011" alt="logo" width={16} height={16} />
+                            <img src="/logo-large.png" alt="sitein2days.online logo" style={{ height: '40px', width: 'auto', objectFit: 'contain' }} />
                         </div>
-                        <span style={{ fontWeight: 900, fontSize: '18px', color: '#fff' }}>
-                            sitein2days.online
-                        </span>
                     </Link>
                 </div>
 

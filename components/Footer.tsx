@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { Phone, MapPin, Mail, Linkedin, Twitter, Facebook, Instagram } from 'lucide-react';
+import { Phone, MapPin, Mail } from 'lucide-react';
 
 const Footer: React.FC = () => {
   return (
@@ -81,7 +81,6 @@ const Footer: React.FC = () => {
         {/* Bottom Bar */}
         <div className="flex flex-col md:flex-row justify-between items-center gap-4 pt-8 border-t border-gray-200">
           <div className="flex items-center gap-2">
-            <img src="/logo-small.png" alt="logo" width={28} height={28} className="object-contain" />
             <p className="text-[10px] text-gray-500">
               © 2026 <span className="font-semibold text-gray-700">sitein2days.online</span>. All rights reserved.
             </p>
