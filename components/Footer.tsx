@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { Sparkles, Phone, MapPin, Mail, Linkedin, Twitter, Facebook, Instagram } from 'lucide-react';
+import { Phone, MapPin, Mail, Linkedin, Twitter, Facebook, Instagram } from 'lucide-react';
 
 const Footer: React.FC = () => {
   return (
@@ -82,7 +82,7 @@ const Footer: React.FC = () => {
         <div className="flex flex-col md:flex-row justify-between items-center gap-4 pt-8 border-t border-gray-200">
           <div className="flex items-center gap-2">
             <div className="bg-black p-1.5 rounded-full">
-              <Sparkles size={14} fill="#ccf381" className="text-accent" />
+              <img src="/icon.svg?368bed49bb332011" alt="logo" width={14} height={14} />
             </div>
             <p className="text-[10px] text-gray-500">
               © 2026 <span className="font-semibold text-gray-700">sitein2days.online</span>. All rights reserved.

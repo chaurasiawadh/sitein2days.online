@@ -5,7 +5,7 @@ import {
     LogOut,
     Lock,
     Home,
-    Sparkles,
+
     Mail,
     Phone,
     Building,
@@ -117,7 +117,7 @@ export default function AdminDashboard({ submissions }: AdminDashboardProps) {
                 {/* Logo Area */}
                 <div className="h-16 flex items-center px-6 bg-black border-b border-white/10">
                     <div className="bg-[#ccf381] p-1.5 rounded-lg mr-3 shadow-[0_0_15px_rgba(204,243,129,0.3)]">
-                        <Sparkles size={16} className="text-black" strokeWidth={2.5} />
+                        <img src="/icon.svg?368bed49bb332011" alt="logo" width={16} height={16} />
                     </div>
                     <span className="font-bold text-white text-lg tracking-tight">sitein2days.online</span>
                 </div>

@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useState, useEffect } from 'react';
-import { Menu, X, Sparkles, ArrowRight, ArrowLeft } from 'lucide-react';
+import { Menu, X, ArrowRight, ArrowLeft } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
@@ -98,7 +98,7 @@ const Navbar: React.FC<NavbarProps> = ({ onOpenContact }) => {
                 >
                   <Link href="/" className="flex items-center gap-2 group z-50">
                     <div className="bg-black p-1.5 rounded-full text-white group-hover:rotate-12 transition-transform duration-300">
-                      <Sparkles size={16} fill="#ccf381" className="text-accent" />
+                      <img src="/icon.svg?368bed49bb332011" alt="logo" width={16} height={16} />
                     </div>
                     <span className="font-black text-lg tracking-tight text-black">
                       sitein2days.online
@@ -172,7 +172,7 @@ const Navbar: React.FC<NavbarProps> = ({ onOpenContact }) => {
               <div className="flex items-center justify-between p-6 border-b border-gray-100">
                 <Link href="/" className="flex items-center gap-2" onClick={() => setIsOpen(false)}>
                   <div className="bg-black p-1.5 rounded-full text-white">
-                    <Sparkles size={16} fill="#ccf381" className="text-accent" />
+                    <img src="/icon.svg?368bed49bb332011" alt="logo" width={16} height={16} />
                   </div>
                   <span className="font-black text-lg tracking-tight text-black">
                     sitein2days.online
