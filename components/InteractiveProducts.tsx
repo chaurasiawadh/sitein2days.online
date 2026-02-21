@@ -19,10 +19,10 @@ const InteractiveProducts: React.FC = () => {
             color: "bg-purple-100 text-purple-900 border-purple-200"
         },
         {
-            name: "Arthik.money",
-            desc: "AI-powered personal finance and expense manager.",
-            action: "Explore smart finance",
-            slug: "arthik-money",
+            name: "Nixet.io",
+            desc: "Digital product design, development, and blockchain integration.",
+            action: "Explore digital solutions",
+            slug: "nixet",
             color: "bg-green-100 text-green-900 border-green-200"
         }
     ];
