@@ -49,4 +49,3 @@ Robust monitoring and system alerts to ensure your critical applications and inf
 - **Framework**: Next.js 14
 - **Database**: Postgres, Drizzle ORM
 - **Styling**: TailwindCSS, Framer Motion
-- **Analytics**: PostHog

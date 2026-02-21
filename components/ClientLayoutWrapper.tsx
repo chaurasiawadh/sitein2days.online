@@ -5,7 +5,7 @@ import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import ContactModal from '@/components/ContactModal';
 import { usePathname } from 'next/navigation';
-import { PHProvider } from '../app/Providers';
+
 
 export const ContactContext = createContext<{ open: () => void } | undefined>(undefined);
 export const useContact = () => {
@@ -24,13 +24,11 @@ export default function ClientLayoutWrapper({ children }: { children: ReactNode 
     const isAdminRoute = pathname?.startsWith('/admin');
 
     return (
-        <PHProvider>
-            <ContactContext.Provider value={{ open: openContact }}>
-                {!isAdminRoute && <Navbar onOpenContact={openContact} />}
-                <main className={isAdminRoute ? '' : 'pt-20 min-h-screen'}>{children}</main>
-                {!isAdminRoute && <Footer />}
-                {!isAdminRoute && <ContactModal isOpen={isContactOpen} onClose={closeContact} />}
-            </ContactContext.Provider>
-        </PHProvider>
+        <ContactContext.Provider value={{ open: openContact }}>
+            {!isAdminRoute && <Navbar onOpenContact={openContact} />}
+            <main className={isAdminRoute ? '' : 'pt-20 min-h-screen'}>{children}</main>
+            {!isAdminRoute && <Footer />}
+            {!isAdminRoute && <ContactModal isOpen={isContactOpen} onClose={closeContact} />}
+        </ContactContext.Provider>
     );
 }
