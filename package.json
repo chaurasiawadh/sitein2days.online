@@ -1,7 +1,7 @@
 {
-  "name": "nexus-ai-&-web-agency",
+  "name": "sitein2days.online",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.0.1",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
