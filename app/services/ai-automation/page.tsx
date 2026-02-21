@@ -15,7 +15,7 @@ export const metadata: Metadata = {
         type: 'website',
         images: [
             {
-                url: '/opengraph-image.jpg?v=2',
+                url: '/og-ai-automation.png',
                 width: 1200,
                 height: 630,
                 alt: 'sitein2days.online AI Automation Services',

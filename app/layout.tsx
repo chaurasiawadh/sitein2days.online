@@ -7,33 +7,33 @@ import { ReactNode } from 'react';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata = {
-  title: 'Automate Your Ops: AI Agents & Workflow Orchestration | sitein2days.online',
-  description: 'Stop hiring for repetitive tasks. Our AI agents automate 75% of support tickets and manual workflows. See how we save teams 20-40 hrs/week.',
+  title: 'sitein2days.online | Your Complete Digital Partner for AI, Shopify & Data',
+  description: 'From custom AI agents and Shopify development to Power BI dashboards and marketing automation. Scale your operations with sitein2days.online.',
   metadataBase: new URL('https://sitein2days.online'),
   icons: {
     icon: '/logo-small.png',
   },
   openGraph: {
-    title: 'Automate Your Ops: AI Agents & Workflow Orchestration | sitein2days.online',
-    description: 'Stop hiring for repetitive tasks. Our AI agents automate 75% of support tickets and manual workflows. See how we save teams 20-40 hrs/week.',
+    title: 'sitein2days.online | Your Complete Digital Partner',
+    description: 'Transform your business with our custom AI automation, Shopify e-commerce solutions, and actionable data analytics.',
     url: 'https://sitein2days.online',
     siteName: 'sitein2days.online',
     locale: 'en_US',
     type: 'website',
     images: [
       {
-        url: '/opengraph-image.jpg?v=2',
+        url: '/logo-large.png',
         width: 1200,
         height: 630,
-        alt: 'sitein2days.online - AI Automation & Workflow Orchestration',
+        alt: 'sitein2days.online - Complete Digital Partner',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Automate Your Ops: AI Agents & Workflow Orchestration | sitein2days.online',
-    description: 'Stop hiring for repetitive tasks. Our AI agents automate 75% of support tickets and manual workflows. See how we save teams 20-40 hrs/week.',
-    images: ['/opengraph-image.jpg?v=2'],
+    title: 'sitein2days.online | Your Complete Digital Partner',
+    description: 'AI Agents, Shopify Development, and Data Analytics to scale your operations.',
+    images: ['/logo-large.png'],
   },
 };
 
