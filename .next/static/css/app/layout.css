@@ -2155,9 +2155,6 @@ video {
 .capitalize {
   text-transform: capitalize;
 }
-.normal-case {
-  text-transform: none;
-}
 .italic {
   font-style: italic;
 }
@@ -2512,10 +2509,6 @@ video {
 }
 .blur-xl {
   --tw-blur: blur(24px);
-  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
-}
-.grayscale {
-  --tw-grayscale: grayscale(100%);
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 .filter {
@@ -2970,11 +2963,6 @@ video {
 .hover\:shadow-teal-100:hover {
   --tw-shadow-color: #ccfbf1;
   --tw-shadow: var(--tw-shadow-colored);
-}
-
-.hover\:grayscale-0:hover {
-  --tw-grayscale: grayscale(0);
-  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
 .focus\:border-blue-500:focus {
@@ -3451,10 +3439,6 @@ video {
 
   .md\:gap-1 {
     gap: 0.25rem;
-  }
-
-  .md\:gap-24 {
-    gap: 6rem;
   }
 
   .md\:p-10 {
