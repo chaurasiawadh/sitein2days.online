@@ -555,7 +555,7 @@ export const CASE_STUDIES: CaseStudy[] = [
     resourcesNeeded: "Full Stack Team, UI/UX Designer specialized in luxury brands.",
     analyticsSetup: "Google Analytics 4, Conversion optimization tracking.",
     marketingEfforts: "SEO for luxury decor, Instagram presence, Trade Partnerships.",
-    websiteLink: "https://chaurasiawadh.github.io/vinayka_rugs/"
+    websiteLink: "https://www.vinaykarugs.com/"
   }
 ];
 
