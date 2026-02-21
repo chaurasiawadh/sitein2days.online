@@ -6,7 +6,6 @@ import Services from './Services';
 import Process from './Process';
 import Testimonials from './Testimonials';
 import InteractiveProducts from './InteractiveProducts';
-import Partners from './Partners';
 import { useContact } from './ClientLayoutWrapper';
 
 export default function HomeContent() {
@@ -19,7 +18,6 @@ export default function HomeContent() {
             <Process />
             <Testimonials />
             <InteractiveProducts />
-            <Partners />
         </>
     );
 }
