@@ -1,5 +1,5 @@
 // Stub file for static export - server actions are not supported
-export type LoginState = {
+type LoginState = {
     success: boolean;
     message: string | null;
 };

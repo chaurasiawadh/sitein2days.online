@@ -1,12 +1,5 @@
 import { LucideIcon } from 'lucide-react';
 
-export interface PainPoint {
-  id: number;
-  icon: LucideIcon;
-  title: string;
-  description: string;
-}
-
 export interface Service {
   id: number;
   icon: LucideIcon;
@@ -62,13 +55,6 @@ export interface CaseStudy {
   marketingEfforts?: string;
 }
 
-export interface Differentiator {
-  id: number;
-  icon: LucideIcon;
-  title: string;
-  description: string;
-}
-
 export interface Testimonial {
   id: number;
   quote: string;
@@ -79,9 +65,3 @@ export interface Testimonial {
 }
 
 
-
-export interface FAQItem {
-  id: number;
-  question: string;
-  answer: string;
-}

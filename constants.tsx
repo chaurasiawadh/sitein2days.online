@@ -32,35 +32,7 @@ import {
   Workflow,
   Users
 } from 'lucide-react';
-import { PainPoint, Service, Step, CaseStudy, Differentiator, Testimonial, FAQItem } from './types';
-export type { FAQItem };
-
-export const PAIN_POINTS: PainPoint[] = [
-  {
-    id: 1,
-    icon: MonitorX,
-    title: "Drowning in Manual Work",
-    description: "Your operations team is stuck moving data between spreadsheets, CRMs, and support desks manually, wasting 20+ hours a week."
-  },
-  {
-    id: 2,
-    icon: DollarSign,
-    title: "Scaling Costs are Exploding",
-    description: "You can't afford to hire 5 more support reps just to handle increased ticket volume. Headcount costs are eating your margins."
-  },
-  {
-    id: 3,
-    icon: Clock,
-    title: "Slow Turnaround Times",
-    description: "Every manual ticket and data entry error bleeds efficiency. Customers wait days for answers that AI could provide in seconds."
-  },
-  {
-    id: 4,
-    icon: UserCheck,
-    title: "Talent Burnout",
-    description: "Your best employees are stuck doing administrative busywork instead of the strategic problem-solving they were hired for."
-  }
-];
+import { Service, Step, CaseStudy, Testimonial } from './types';
 
 export const SERVICES: Service[] = [
   {
@@ -559,45 +531,6 @@ export const CASE_STUDIES: CaseStudy[] = [
   }
 ];
 
-export const DIFFERENTIATORS: Differentiator[] = [
-  {
-    id: 1,
-    icon: Target,
-    title: "Obsessed With Your Bottom Line",
-    description: "We don't just build websites that look good, we engineer digital assets that drive measurable business results based on data."
-  },
-  {
-    id: 2,
-    icon: MessageSquare,
-    title: "No Tech Jargon, Just Clear Updates",
-    description: "We explain everything in plain English. You'll never wonder what's happening with your project with our weekly updates."
-  },
-  {
-    id: 3,
-    icon: Zap,
-    title: "2-Week Launch Guarantee",
-    description: "While others take months, our streamlined process delivers professional standard websites in 2-4 weeks."
-  },
-  {
-    id: 4,
-    icon: DollarSign,
-    title: "Enterprise Quality at Fair Prices",
-    description: "Expertise of high-end agencies without the inflated costs. Transparent, competitive pricing designed for ROI."
-  },
-  {
-    id: 5,
-    icon: UserCheck,
-    title: "We Stick Around After Launch",
-    description: "We provide continued support, training, and optimization. Your success is our success, and we're invested in your growth."
-  },
-  {
-    id: 6,
-    icon: Puzzle,
-    title: "Built for You, Not Copy-Pasted",
-    description: "Every project is custom-built to match your unique brand. We never use generic templates."
-  }
-];
-
 export const TESTIMONIALS: Testimonial[] = [
   {
     id: 1,
@@ -626,39 +559,6 @@ export const TESTIMONIALS: Testimonial[] = [
 ];
 
 
-
-export const FAQS: FAQItem[] = [
-  {
-    id: 1,
-    question: "How long does a typical project take?",
-    answer: "Standard websites take 2-4 weeks. AI automation projects typically take 2-3 weeks. Complex transformations take 5-6 weeks. We provide exact timelines in our proposals."
-  },
-  {
-    id: 2,
-    question: "Do you require full payment upfront?",
-    answer: "No. We typically split payment: 50% deposit, 25% midpoint, and 25% upon completion. Custom schedules are available for larger projects."
-  },
-  {
-    id: 3,
-    question: "What if I need changes after launch?",
-    answer: "All packages include 30-90 days of support for tweaks and fixes. Afterward, we offer maintenance packages or ad-hoc updates."
-  },
-  {
-    id: 4,
-    question: "Can you work with my existing website?",
-    answer: "Absolutely. We can redesign, update, or add features to existing sites. We'll assess your current site during the consultation."
-  },
-  {
-    id: 5,
-    question: "Will my website be mobile-friendly?",
-    answer: "Yes, guaranteed. Every website we build is fully responsive and tested across all devices."
-  },
-  {
-    id: 6,
-    question: "Do you offer ongoing maintenance?",
-    answer: "Yes! We offer monthly maintenance starting at $150/month covering security, backups, and minor updates."
-  }
-];
 
 export const ECOMMERCE_PORTFOLIO = [
   {

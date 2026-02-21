@@ -1,7 +1,7 @@
 import { FAQItem } from '@/constants';
 import React from 'react';
 
-export type OrganizationSchema = {
+type OrganizationSchema = {
     '@context': 'https://schema.org';
     '@type': 'Organization';
     name: string;
@@ -29,7 +29,7 @@ export type OrganizationSchema = {
     };
 };
 
-export type ServiceSchema = {
+type ServiceSchema = {
     '@context': 'https://schema.org';
     '@type': 'Service';
     serviceType: string;
@@ -48,7 +48,7 @@ export type ServiceSchema = {
     };
 };
 
-export type FAQPageSchema = {
+type FAQPageSchema = {
     '@context': 'https://schema.org';
     '@type': 'FAQPage';
     mainEntity: Array<{
@@ -61,7 +61,7 @@ export type FAQPageSchema = {
     }>;
 };
 
-export type HowToSchema = {
+type HowToSchema = {
     '@context': 'https://schema.org';
     '@type': 'HowTo';
     name: string;
@@ -79,26 +79,7 @@ export type HowToSchema = {
     }>;
 };
 
-export type ReviewSchema = {
-    '@context': 'https://schema.org';
-    '@type': 'Review';
-    itemReviewed: {
-        '@type': 'Service' | 'Organization';
-        name: string;
-    };
-    reviewRating: {
-        '@type': 'Rating';
-        ratingValue: number;
-        bestRating: string;
-    };
-    author: {
-        '@type': 'Person' | 'Organization';
-        name: string;
-    };
-    reviewBody: string;
-};
-
-export type ArticleSchema = {
+type ArticleSchema = {
     '@context': 'https://schema.org';
     '@type': 'Article';
     headline: string;
@@ -204,27 +185,6 @@ export function getHowToSchema(data: { name: string; description: string; steps:
             '@type': 'HowToTool',
             name: tool
         }))
-    };
-}
-
-export function getReviewSchema(review: { itemReviewed: string; rating: number; author: string; text: string }): ReviewSchema {
-    return {
-        '@context': 'https://schema.org',
-        '@type': 'Review',
-        itemReviewed: {
-            '@type': 'Service',
-            name: review.itemReviewed,
-        },
-        reviewRating: {
-            '@type': 'Rating',
-            ratingValue: review.rating,
-            bestRating: '5',
-        },
-        author: {
-            '@type': 'Person',
-            name: review.author,
-        },
-        reviewBody: review.text,
     };
 }
 

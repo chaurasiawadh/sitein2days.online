@@ -7,7 +7,7 @@ import ContactModal from '@/components/ContactModal';
 import { usePathname } from 'next/navigation';
 
 
-export const ContactContext = createContext<{ open: () => void } | undefined>(undefined);
+const ContactContext = createContext<{ open: () => void } | undefined>(undefined);
 export const useContact = () => {
     const ctx = useContext(ContactContext);
     if (!ctx) throw new Error('useContact must be used within ContactProvider');
