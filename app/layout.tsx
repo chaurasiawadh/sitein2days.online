@@ -10,6 +10,8 @@ export const metadata = {
   title: 'sitein2days.online | Your Complete Digital Partner for AI, Shopify & Data',
   description: 'From custom AI agents and Shopify development to Power BI dashboards and marketing automation. Scale your operations with sitein2days.online.',
   metadataBase: new URL('https://sitein2days.online'),
+  robots: 'index, follow',
+  alternates: { canonical: '/' },
   icons: {
     icon: '/logo-small.png',
   },
@@ -37,15 +39,17 @@ export const metadata = {
   },
 };
 
-import { getOrganizationSchema, JsonLdScript } from '@/lib/json-ld';
+import { getOrganizationSchema, getWebSiteSchema, JsonLdScript } from '@/lib/json-ld';
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   const organizationSchema = getOrganizationSchema();
+  const websiteSchema = getWebSiteSchema();
 
   return (
     <html lang="en">
       <body className={inter.className}>
         <JsonLdScript data={organizationSchema} id="organization-schema" />
+        <JsonLdScript data={websiteSchema} id="website-schema" />
         <ClientLayoutWrapper>
           {children}
         </ClientLayoutWrapper>

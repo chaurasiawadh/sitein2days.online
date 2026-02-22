@@ -52,7 +52,7 @@ const Hero: React.FC<HeroProps> = ({ onOpenContact }) => {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="text-lg md:text-xl text-gray-500 mb-8 md:mb-10 max-w-3xl mx-auto leading-relaxed font-normal"
           >
-            Scale your business without scaling headcount. We build autonomous workflows that save 20-40 hours/week and cut operational costs by 40%.
+            Scale your business without scaling headcount. We offer <strong className="font-semibold text-gray-700">budget-friendly web services</strong> and <strong className="font-semibold text-gray-700">quick website development</strong> to build autonomous workflows that save 20-40 hours/week.
           </motion.p>
 
           {/* Benefit Bullets */}

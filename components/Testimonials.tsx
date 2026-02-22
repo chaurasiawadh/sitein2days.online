@@ -4,6 +4,7 @@ import React from 'react';
 import { Star, Quote } from 'lucide-react';
 import { TESTIMONIALS } from '../constants';
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 
 const Testimonials: React.FC = () => {
   const containerVariants = {
@@ -109,10 +110,12 @@ const Testimonials: React.FC = () => {
 
               {/* Author Info */}
               <div className="flex items-center gap-4 pt-6 border-t border-gray-200">
-                <div className="relative">
-                  <img
+                <div className="relative w-14 h-14">
+                  <Image
                     src={t.image}
                     alt={t.name}
+                    width={56}
+                    height={56}
                     className="w-14 h-14 rounded-full object-cover ring-2 ring-gray-200 group-hover:ring-accent transition-all duration-300"
                   />
                   <div className="absolute inset-0 rounded-full bg-gradient-to-br from-purple-400 to-pink-400 opacity-0 group-hover:opacity-20 transition-opacity duration-300" />

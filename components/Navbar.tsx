@@ -4,6 +4,7 @@ import React, { useState, useEffect } from 'react';
 import { Menu, X, ArrowRight, ArrowLeft } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import Link from 'next/link';
+import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 
 interface NavbarProps {
@@ -97,7 +98,7 @@ const Navbar: React.FC<NavbarProps> = ({ onOpenContact }) => {
                   transition={{ duration: 0.4, ease: [0.16, 1, 0.3, 1] }}
                 >
                   <Link href="/" className="flex items-center group z-50">
-                    <img src="/logo-large.png" alt="sitein2days.online logo" className="h-10 w-auto scale-[5] ml-[120px] object-contain transition-transform duration-300 group-hover:scale-105" />
+                    <Image src="/logo-large.png" alt="sitein2days.online logo" width={200} height={40} className="h-10 w-auto scale-[5] ml-[120px] object-contain transition-transform duration-300 group-hover:scale-105" />
                   </Link>
                 </motion.div>
               )}
@@ -166,7 +167,7 @@ const Navbar: React.FC<NavbarProps> = ({ onOpenContact }) => {
               {/* Mobile Drawer Header */}
               <div className="flex items-center justify-between p-6 border-b border-gray-100">
                 <Link href="/" className="flex items-center" onClick={() => setIsOpen(false)}>
-                  <img src="/logo-large.png" alt="sitein2days.online logo" className="h-10 w-auto object-contain" />
+                  <Image src="/logo-large.png" alt="sitein2days.online logo" width={200} height={40} className="h-10 w-auto object-contain" />
                 </Link>
                 <button
                   onClick={() => setIsOpen(false)}

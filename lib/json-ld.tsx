@@ -1,7 +1,7 @@
 import { FAQItem } from '@/constants';
 import React from 'react';
 
-type OrganizationSchema = {
+export type OrganizationSchema = {
     '@context': 'https://schema.org';
     '@type': 'Organization';
     name: string;
@@ -26,6 +26,21 @@ type OrganizationSchema = {
         addressRegion?: string;
         postalCode?: string;
         addressCountry?: string;
+    };
+};
+
+export type WebSiteSchema = {
+    '@context': 'https://schema.org';
+    '@type': 'WebSite';
+    name: string;
+    url: string;
+    potentialAction?: {
+        '@type': 'SearchAction';
+        target: {
+            '@type': 'EntryPoint';
+            urlTemplate: string;
+        };
+        'query-input': string;
     };
 };
 
@@ -132,6 +147,23 @@ export function getOrganizationSchema(): OrganizationSchema {
             'https://twitter.com/sitein2days', // Placeholder
             'https://linkedin.com/company/sitein2days' // Placeholder
         ]
+    };
+}
+
+export function getWebSiteSchema(): WebSiteSchema {
+    return {
+        '@context': 'https://schema.org',
+        '@type': 'WebSite',
+        name: ORGANIZATION_NAME,
+        url: BASE_URL,
+        potentialAction: {
+            '@type': 'SearchAction',
+            target: {
+                '@type': 'EntryPoint',
+                urlTemplate: `${BASE_URL}/search?q={search_term_string}`
+            },
+            'query-input': 'required name=search_term_string'
+        }
     };
 }
 
