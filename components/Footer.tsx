@@ -40,7 +40,6 @@ const Footer: React.FC = () => {
               <li><Link href="/services" className="text-gray-600 text-sm hover:text-black transition-colors">Services</Link></li>
               <li><Link href="/faq" className="text-gray-600 text-sm hover:text-black transition-colors">FAQ</Link></li>
               <li><Link href="/portfolio" className="text-gray-600 text-sm hover:text-black transition-colors">Portfolio</Link></li>
-              <li><Link href="/#culture" className="text-gray-600 text-sm hover:text-black transition-colors">Discover</Link></li>
             </ul>
           </div>
 
@@ -49,20 +48,7 @@ const Footer: React.FC = () => {
             <h4 className="font-bold text-base mb-6 text-black">Solution</h4>
             <ul className="space-y-3">
               <li><Link href="/contact" className="text-gray-600 text-sm hover:text-black transition-colors">Get in Touch</Link></li>
-              <li><Link href="/services" className="text-gray-600 text-sm hover:text-black transition-colors">Technology</Link></li>
-              <li><Link href="/#team" className="text-gray-600 text-sm hover:text-black transition-colors">Who We Are</Link></li>
               <li><Link href="/services" className="text-gray-600 text-sm hover:text-black transition-colors">Expertise</Link></li>
-            </ul>
-          </div>
-
-          {/* Discover Section */}
-          <div>
-            <h4 className="font-bold text-base mb-6 text-black">Discover</h4>
-            <ul className="space-y-3">
-              <li><Link href="/blogs" className="text-gray-600 text-sm hover:text-black transition-colors">Latest News</Link></li>
-              <li><Link href="/portfolio" className="text-gray-600 text-sm hover:text-black transition-colors">New Arrivals</Link></li>
-              <li><Link href="/services" className="text-gray-600 text-sm hover:text-black transition-colors">Solution</Link></li>
-              <li><Link href="/contact" className="text-gray-600 text-sm hover:text-black transition-colors">Career</Link></li>
             </ul>
           </div>
 
