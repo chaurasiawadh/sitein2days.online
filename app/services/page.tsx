@@ -274,9 +274,6 @@ import { getServiceSchema, getHowToSchema, JsonLdScript } from '@/lib/json-ld';
 export default function ServicesPage() {
     const allServices = [...CORE_SERVICES, ...DATA_SERVICES];
 
-    console.log('allServices', allServices);
-
-
     return (
         <div className="min-h-screen pt-16 pb-16 sm:pt-24 sm:pb-20">
             {allServices.map((service, index) => (

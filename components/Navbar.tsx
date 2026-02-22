@@ -50,7 +50,7 @@ const Navbar: React.FC<NavbarProps> = ({ onOpenContact }) => {
     };
   }, [isOpen]);
 
-  const isPortfolioDetail = pathname.startsWith('/portfolio/') && pathname !== '/portfolio';
+  const isPortfolioDetail = pathname.startsWith('/portfolio/') && pathname !== '/portfolio' && pathname !== '/portfolio/';
 
   return (
     <>
