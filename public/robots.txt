@@ -4,9 +4,7 @@
 User-agent: *
 Allow: /
 
-# Disallow admin and internal pages
-Disallow: /admin
-Disallow: /admin/
+# Disallow internal pages
 Disallow: /_next/
 Disallow: /api/
 

@@ -20,15 +20,12 @@ export default function ClientLayoutWrapper({ children }: { children: ReactNode 
     const closeContact = () => setIsContactOpen(false);
     const pathname = usePathname();
 
-    // Check if current route is an admin route
-    const isAdminRoute = pathname?.startsWith('/admin');
-
     return (
         <ContactContext.Provider value={{ open: openContact }}>
-            {!isAdminRoute && <Navbar onOpenContact={openContact} />}
-            <main className={isAdminRoute ? '' : 'pt-20 min-h-screen'}>{children}</main>
-            {!isAdminRoute && <Footer />}
-            {!isAdminRoute && <ContactModal isOpen={isContactOpen} onClose={closeContact} />}
+            <Navbar onOpenContact={openContact} />
+            <main className="pt-20 min-h-screen">{children}</main>
+            <Footer />
+            <ContactModal isOpen={isContactOpen} onClose={closeContact} />
         </ContactContext.Provider>
     );
 }

@@ -412,18 +412,18 @@ export const CASE_STUDIES: CaseStudy[] = [
     client: "The Decorating Varanasi",
     industry: "Event Management",
     services: ["Custom AI Development", "AI Automation", "Event Tech"],
-    challenge: "Organizing events efficiently required a dual-interface system for both admins and users.",
-    solution: "A dynamic Event Management website built and deployed in just 1 Day using AI, featuring real-time updates and a robust admin panel.",
+    challenge: "Organizing events efficiently required a streamlined system for users.",
+    solution: "A dynamic Event Management website built and deployed in just 1 Day using AI, featuring real-time updates.",
     results: [
       "1-Day Deployment",
       "Real-time Updates",
-      "Robust Admin Panel",
+      "Streamlined Workflow",
       "Clean UI/UX"
     ],
     image: "/assets/portfolio/decorating_varanasi.png",
     testimonial: "A comprehensive web application that streamlines the organization of events effectively.",
     testimonialAuthor: "Founder, The Decorating Varanasi",
-    overview: "A dynamic Event Management website built and deployed in just 1 Day using AI. This comprehensive web application streamlines the organization of events through a dual-interface system, catering effectively to both administrators and end-users.",
+    overview: "A dynamic Event Management website built and deployed in just 1 Day using AI. This comprehensive web application streamlines the organization of events, catering effectively to all users.",
     painPointsSolved: [
       "Slow development timelines",
       "Manual event management",
