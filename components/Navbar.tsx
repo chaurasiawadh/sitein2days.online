@@ -85,13 +85,13 @@ const Navbar: React.FC<NavbarProps> = ({ onOpenContact }) => {
               ) : (
                 <motion.div
                   key="logo"
-                  initial={{ opacity: 0, y: -10, filter: "blur(4px)" }}
+                  initial={{ opacity: 0, y: -1, filter: "blur(4px)" }}
                   animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
-                  exit={{ opacity: 0, y: 10, filter: "blur(4px)" }}
+                  exit={{ opacity: 0, y: 1, filter: "blur(4px)" }}
                   transition={{ duration: 0.4, ease: [0.16, 1, 0.3, 1] }}
                 >
                   <Link href="/" className="flex items-center group z-50">
-                    <Image src="/logo-large.png" alt="sitein2days.online logo" width={200} height={40} className="h-10 w-auto scale-[5] ml-[120px] object-contain transition-transform duration-300 group-hover:scale-105" />
+                    <Image src="/logo-large.png" alt="sitein2days.online logo" width={1500} height={10} className="h-10 w-auto scale-[5] ml-[120px] object-contain" />
                   </Link>
                 </motion.div>
               )}
