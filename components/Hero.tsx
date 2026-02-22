@@ -12,7 +12,7 @@ interface HeroProps {
 
 const Hero: React.FC<HeroProps> = ({ onOpenContact }) => {
   return (
-    <section className="relative pt-16 pb-12 md:pt-28 md:pb-20 overflow-visible">
+    <section className="relative pt-16 pb-12 md:pt-18 md:pb-20 overflow-visible">
       {/* Background Gradient */}
       <div className="absolute inset-0 z-0 bg-white overflow-hidden">
         <div className="absolute top-[-20%] left-[-10%] w-[50%] h-[50%] bg-accent/20 rounded-full blur-[120px]"></div>
