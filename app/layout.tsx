@@ -39,17 +39,21 @@ export const metadata = {
   },
 };
 
-import { getOrganizationSchema, getWebSiteSchema, JsonLdScript } from '@/lib/json-ld';
+import { getOrganizationSchema, getWebSiteSchema, getProfessionalServiceSchema, getSoftwareApplicationSchema, JsonLdScript } from '@/lib/json-ld';
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   const organizationSchema = getOrganizationSchema();
   const websiteSchema = getWebSiteSchema();
+  const professionalServiceSchema = getProfessionalServiceSchema();
+  const softwareApplicationSchema = getSoftwareApplicationSchema();
 
   return (
     <html lang="en">
       <body className={inter.className}>
         <JsonLdScript data={organizationSchema} id="organization-schema" />
         <JsonLdScript data={websiteSchema} id="website-schema" />
+        <JsonLdScript data={professionalServiceSchema} id="professional-service-schema" />
+        <JsonLdScript data={softwareApplicationSchema} id="software-application-schema" />
         <ClientLayoutWrapper>
           {children}
         </ClientLayoutWrapper>

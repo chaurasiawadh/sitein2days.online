@@ -44,6 +44,34 @@ export type WebSiteSchema = {
     };
 };
 
+export type ProfessionalServiceSchema = {
+    '@context': 'https://schema.org';
+    '@type': 'ProfessionalService';
+    name: string;
+    description: string;
+    url: string;
+    image: string;
+    address?: {
+        '@type': 'PostalAddress';
+        addressCountry: string;
+    };
+    priceRange: string;
+};
+
+export type SoftwareApplicationSchema = {
+    '@context': 'https://schema.org';
+    '@type': 'SoftwareApplication';
+    name: string;
+    applicationCategory: string;
+    operatingSystem: string;
+    description: string;
+    offers?: {
+        '@type': 'Offer';
+        price: string;
+        priceCurrency: string;
+    };
+};
+
 type ServiceSchema = {
     '@context': 'https://schema.org';
     '@type': 'Service';
@@ -128,7 +156,7 @@ export function getOrganizationSchema(): OrganizationSchema {
         legalName: 'sitein2days.online', // Assuming similar legal name
         url: BASE_URL,
         logo: `${BASE_URL}/logo-small.png`,
-        description: 'sitein2days.online automates business operations using AI agents and workflow orchestration. We save teams 20-40 hours/week by automating repetitive tasks.',
+        description: 'sitein2days.online automates business operations using AI agents and workflow orchestration. We save teams 20-40 hours/week by automating repetitive tasks. Our expertise includes Quick Website Development, Affordable Web Services, and creating a Professional Business Portfolio to scale your operations.',
         contactPoint: [
             {
                 '@type': 'ContactPoint',
@@ -241,6 +269,38 @@ export function getArticleSchema(article: { headline: string; description: strin
         },
         datePublished: article.datePublished,
         dateModified: article.dateModified,
+    };
+}
+
+export function getProfessionalServiceSchema(): ProfessionalServiceSchema {
+    return {
+        '@context': 'https://schema.org',
+        '@type': 'ProfessionalService',
+        name: ORGANIZATION_NAME,
+        description: 'We are a React/Next.js Expert agency offering Quick Website Development and Affordable Web Services to help build your Professional Business Portfolio.',
+        url: BASE_URL,
+        image: `${BASE_URL}/logo-large.png`,
+        priceRange: '$$',
+        address: {
+            '@type': 'PostalAddress',
+            addressCountry: 'Worldwide',
+        }
+    };
+}
+
+export function getSoftwareApplicationSchema(): SoftwareApplicationSchema {
+    return {
+        '@context': 'https://schema.org',
+        '@type': 'SoftwareApplication',
+        name: 'AI Agent & Custom Automation Platform',
+        applicationCategory: 'BusinessApplication',
+        operatingSystem: 'Web-based',
+        description: 'Custom AI agents and full-stack enterprise solutions tailored for quick website development and workflow automation. Includes custom CRM and Data Analytics suites built by a React/Next.js Expert.',
+        offers: {
+            '@type': 'Offer',
+            price: 'Custom',
+            priceCurrency: 'USD'
+        }
     };
 }
 

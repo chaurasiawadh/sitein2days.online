@@ -13,7 +13,7 @@ const Process: React.FC = () => {
           <h2 className="mt-6 text-4xl md:text-5xl font-black text-black tracking-tight leading-[1.1]">
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-pink-500">Vision to Scale.</span>
           </h2>
-          <p className="mt-4 text-lg text-gray-500 max-w-2xl mx-auto">
+          <p className="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">
             One team. One mission. Your success. We guide you through the entire lifecycle.
           </p>
         </div>
@@ -56,7 +56,7 @@ const Process: React.FC = () => {
                 {/* Content */}
                 <div className="relative z-10">
                   <h3 className={`text-xl font-bold text-gray-900 mb-2 group-hover:${color.text} transition-colors`}>{step.title}</h3>
-                  <p className="text-gray-500 text-sm leading-relaxed mb-4">
+                  <p className="text-gray-600 text-sm leading-relaxed mb-4">
                     {step.description}
                   </p>
                 </div>

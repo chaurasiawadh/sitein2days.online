@@ -86,7 +86,7 @@ const Team: React.FC = () => {
                             Innovation
                         </span>
                     </h2>
-                    <p className="mt-6 text-xl text-gray-500">
+                    <p className="mt-6 text-xl text-gray-600">
                         Our diverse team of experts brings together decades of combined experience in technology, design, and business strategy.
                     </p>
                 </div>
@@ -158,7 +158,7 @@ const Team: React.FC = () => {
                         <h3 className="text-3xl md:text-4xl font-black text-black mb-4">
                             Our Extended Team
                         </h3>
-                        <p className="text-lg text-gray-500 max-w-2xl mx-auto">
+                        <p className="text-lg text-gray-600 max-w-2xl mx-auto">
                             A talented pool of specialists ready to bring your vision to life
                         </p>
                     </div>

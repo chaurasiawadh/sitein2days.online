@@ -74,7 +74,7 @@ export default function CaseStudyDetail({ params }: { params: { slug: string } }
                 {/* Main Image */}
                 <div className="px-4 max-w-7xl mx-auto mb-12 sm:mb-20">
                     <div className="aspect-video bg-gray-100 rounded-[2rem] overflow-hidden shadow-2xl">
-                        <img src={study.image} alt={study.client} className="w-full h-full object-cover" />
+                        <img src={study.image} alt={study.client} width={800} height={600} className="w-full h-full object-cover" />
                     </div>
                 </div>
 

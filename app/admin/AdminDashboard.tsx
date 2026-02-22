@@ -117,7 +117,7 @@ export default function AdminDashboard({ submissions }: AdminDashboardProps) {
                 {/* Logo Area */}
                 <div className="h-16 flex items-center px-4 bg-black border-b border-white/10">
                     <div className="bg-white px-3 py-2 rounded-lg flex items-center justify-center w-full h-10">
-                        <img src="/logo-large.png" alt="sitein2days.online logo" className="h-full w-auto object-contain" />
+                        <img src="/logo-large.png" alt="sitein2days.online logo" width={200} height={40} className="h-full w-auto object-contain" />
                     </div>
                 </div>
 

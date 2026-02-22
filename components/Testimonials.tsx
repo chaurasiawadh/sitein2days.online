@@ -121,7 +121,7 @@ const Testimonials: React.FC = () => {
                   <div className="absolute inset-0 rounded-full bg-gradient-to-br from-purple-400 to-pink-400 opacity-0 group-hover:opacity-20 transition-opacity duration-300" />
                 </div>
                 <div>
-                  <h4 className="font-bold text-black text-sm">{t.name}</h4>
+                  <h3 className="font-bold text-black text-sm">{t.name}</h3>
                   <p className="text-xs text-gray-500 font-medium mt-0.5">{t.position}</p>
                 </div>
               </div>

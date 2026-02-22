@@ -34,6 +34,15 @@ import {
 } from 'lucide-react';
 import { Service, Step, CaseStudy, Testimonial } from './types';
 
+export const NAV_LINKS = [
+  { name: 'Explore', href: '/' },
+  { name: 'Portfolio', href: '/portfolio' },
+  { name: 'Services', href: '/services' },
+  { name: 'FAQ', href: '/faq' },
+  { name: 'About Us', href: '/about' },
+  { name: 'Contact Us', href: '/contact' },
+];
+
 export const SERVICES: Service[] = [
   {
     id: 1,
@@ -488,7 +497,7 @@ export const CASE_STUDIES: CaseStudy[] = [
   {
     id: 9,
     slug: "vinayka-rugs",
-    client: "Vinayka Rugs [WIP]",
+    client: "Vinayka Rugs",
     industry: "Luxury E-commerce & Textiles",
     services: ["Custom AI Development", "E-commerce", "Bespoke Solutions", "UI/UX Design"],
     challenge: "Preserving ancient hand-knotting traditions while reaching modern, luxury consumers globally through a digital storefront.",

@@ -50,7 +50,7 @@ const Hero: React.FC<HeroProps> = ({ onOpenContact }) => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
-            className="text-lg md:text-xl text-gray-500 mb-8 md:mb-10 max-w-3xl mx-auto leading-relaxed font-normal"
+            className="text-lg md:text-xl text-gray-600 mb-8 md:mb-10 max-w-3xl mx-auto leading-relaxed font-normal"
           >
             Scale your business without scaling headcount. We offer <strong className="font-semibold text-gray-700">budget-friendly web services</strong> and <strong className="font-semibold text-gray-700">quick website development</strong> to build autonomous workflows that save 20-40 hours/week.
           </motion.p>

@@ -88,7 +88,7 @@ export default function AdminLoginPage() {
                                 justifyContent: 'center',
                             }}
                         >
-                            <img src="/logo-large.png" alt="sitein2days.online logo" style={{ height: '40px', width: 'auto', objectFit: 'contain' }} />
+                            <img src="/logo-large.png" alt="sitein2days.online logo" width={200} height={40} style={{ height: '40px', width: 'auto', objectFit: 'contain' }} />
                         </div>
                     </Link>
                 </div>
