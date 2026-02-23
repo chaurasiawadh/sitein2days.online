@@ -96,7 +96,7 @@ const Navbar: React.FC<NavbarProps> = ({ onOpenContact }) => {
                                 >
                                     <Link to="/" className="flex items-center group z-50">
                                         <img
-                                            src="/logo-large.png"
+                                            src="/logo-large.webp"
                                             alt="sitein2days.online logo"
                                             width={200}
                                             height={50}
