@@ -1,7 +1,7 @@
 import React from 'react';
 import { useParams, Navigate } from 'react-router-dom';
 import { CASE_STUDIES } from '../../constants';
-import { ArrowLeft, Check, Calendar, Users, BarChart, Server, Layers, Megaphone, Smartphone, Download, Globe } from 'lucide-react';
+import { ArrowLeft, Check, Calendar, Users, BarChart, Server, Layers, Megaphone, Smartphone, Download, Globe, ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import VenomButton from '../components/VenomButton';
 
@@ -12,6 +12,13 @@ export default function PortfolioDetail() {
     if (!study) {
         return <Navigate to="/portfolio" replace />;
     }
+
+    const currentIndex = CASE_STUDIES.findIndex(s => s.slug === slug);
+    const moreProjects = [
+        CASE_STUDIES[(currentIndex + 1) % CASE_STUDIES.length],
+        CASE_STUDIES[(currentIndex + 2) % CASE_STUDIES.length],
+        CASE_STUDIES[(currentIndex + 3) % CASE_STUDIES.length],
+    ];
 
     return (
         <div className="bg-white text-gray-900 font-sans">
@@ -184,11 +191,68 @@ export default function PortfolioDetail() {
                     </div>
 
                     {/* Testimonial */}
-                    <div className="text-center max-w-3xl mx-auto py-12">
-                        <p className="text-3xl font-medium italic text-gray-800 mb-6">"{study.testimonial}"</p>
-                        <div className="font-black text-lg">{study.testimonialAuthor}</div>
+                    {study.testimonial && (
+                        <div className="text-center max-w-3xl mx-auto py-12">
+                            <p className="text-3xl font-medium italic text-gray-800 mb-6">"{study.testimonial}"</p>
+                            <div className="font-black text-lg">{study.testimonialAuthor}</div>
+                        </div>
+                    )}
+                </div>
+
+                {/* More Projects Integration to improve SEO internal linking */}
+                <div className="px-4 max-w-7xl mx-auto mt-20 sm:mt-32 border-t border-gray-100 pt-16 sm:pt-24">
+                    <div className="flex flex-col sm:flex-row items-baseline justify-between mb-12 sm:mb-16 gap-6">
+                        <h2 className="text-4xl sm:text-5xl font-black text-black">More Work</h2>
+                        <Link to="/portfolio" className="group flex items-center gap-2 text-lg font-bold hover:text-purple-600 transition-colors">
+                            View all projects <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
+                        </Link>
+                    </div>
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                        {moreProjects.map((project) => (
+                            <Link
+                                to={`/portfolio/${project.slug}`}
+                                key={project.slug}
+                                className="group bg-white rounded-3xl overflow-hidden border border-gray-100 hover:border-gray-200 hover:shadow-xl transition-all duration-300 flex flex-col h-full"
+                            >
+                                <div className="aspect-[4/3] overflow-hidden bg-gray-100 relative">
+                                    <div className="absolute inset-0 bg-black/5 group-hover:bg-transparent transition-colors z-10" />
+                                    <img
+                                        src={project.image}
+                                        alt={project.client}
+                                        loading="lazy"
+                                        className="w-full h-full object-cover transform transition-transform duration-700 group-hover:scale-105"
+                                    />
+                                    <div className="absolute top-4 right-4 z-20 opacity-0 group-hover:opacity-100 transition-opacity">
+                                        <div className="bg-white/90 backdrop-blur-sm p-2 rounded-full shadow-sm text-black">
+                                            <ArrowRight size={20} />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="p-6 flex flex-col flex-grow">
+                                    <div className="mb-4">
+                                        <span className="text-[10px] font-bold uppercase tracking-wider px-3 py-1.5 rounded-full text-gray-500 border border-gray-200">
+                                            {project.industry}
+                                        </span>
+                                    </div>
+                                    <h3 className="text-xl font-black mb-3 text-black group-hover:text-purple-600 transition-colors">
+                                        {project.client}
+                                    </h3>
+                                    <p className="text-gray-500 text-sm leading-relaxed mb-6 line-clamp-2 flex-grow">
+                                        {project.overview}
+                                    </p>
+                                    <div className="flex flex-wrap gap-2 mt-auto">
+                                        {project.services.slice(0, 3).map(s => (
+                                            <span key={s} className="text-[10px] font-medium px-3 py-1 rounded-full text-gray-400 bg-gray-50 border border-gray-100">
+                                                {s}
+                                            </span>
+                                        ))}
+                                    </div>
+                                </div>
+                            </Link>
+                        ))}
                     </div>
                 </div>
+
             </div>
         </div>
     );
