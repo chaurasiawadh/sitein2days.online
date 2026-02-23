@@ -66,11 +66,11 @@ const Footer: React.FC = () => {
                 {/* Bottom Bar */}
                 <div className="flex flex-col md:flex-row justify-between items-center gap-4 pt-8 border-t border-gray-200">
                     <div className="flex items-center gap-2">
-                        <p className="text-[10px] text-gray-500">
+                        <p className="text-[10px] text-gray-600">
                             © 2026 <span className="font-semibold text-gray-700">sitein2days.online</span>. All rights reserved.
                         </p>
                     </div>
-                    <div className="flex gap-8 text-[10px] text-gray-500">
+                    <div className="flex gap-8 text-[10px] text-gray-600">
                         <Link to="/policy" className="hover:text-black transition-colors">Privacy Policy</Link>
                         <Link to="/policy" className="hover:text-black transition-colors">Terms & Conditions</Link>
                         <Link to="/policy" className="hover:text-black transition-colors">Refund Policy</Link>

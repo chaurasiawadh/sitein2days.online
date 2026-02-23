@@ -51,14 +51,16 @@ function AppLayout({ children }: { children: ReactNode }) {
 // Tawk.to chat script loader
 function TawkToScript() {
     useEffect(() => {
-        const s1 = document.createElement('script');
-        s1.async = true;
-        s1.src = 'https://embed.tawk.to/6999d3cf3614221c3644ab47/1ji0e6pcq';
-        s1.charset = 'UTF-8';
-        s1.setAttribute('crossorigin', '*');
-        document.head.appendChild(s1);
+        const timer = setTimeout(() => {
+            const s1 = document.createElement('script');
+            s1.async = true;
+            s1.src = 'https://embed.tawk.to/6999d3cf3614221c3644ab47/1ji0e6pcq';
+            s1.charset = 'UTF-8';
+            s1.setAttribute('crossorigin', '*');
+            document.head.appendChild(s1);
+        }, 3000); // Delay loading by 3 seconds to improve initial score
         return () => {
-            document.head.removeChild(s1);
+            clearTimeout(timer);
         };
     }, []);
     return null;

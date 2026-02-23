@@ -28,7 +28,7 @@ const Hero: React.FC<HeroProps> = ({ onOpenContact }) => {
                         transition={{ duration: 0.5 }}
                         className="mb-6 md:mb-8"
                     >
-                        <span className="text-xs sm:text-sm font-medium text-gray-500 tracking-wide px-4 py-2 bg-gray-50 rounded-full border border-gray-100">
+                        <span className="text-xs sm:text-sm font-medium text-gray-600 tracking-wide px-4 py-2 bg-gray-50 rounded-full border border-gray-100">
                             Trusted by innovative teams at <span className="text-black font-semibold">Liquidity.io</span>, <span className="text-black font-semibold">Definable.ai</span>, <a href="https://www.nixet.io/" target="_blank" rel="noopener noreferrer" className="text-black font-semibold hover:text-accent transition-colors">Nixet.io</a>, <Link to="#interactive" className="text-black font-bold hover:text-accent transition-colors underline decoration-dotted underline-offset-4">& more</Link>
                         </span>
                     </motion.div>

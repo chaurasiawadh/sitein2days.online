@@ -95,7 +95,15 @@ const Navbar: React.FC<NavbarProps> = ({ onOpenContact }) => {
                                     transition={{ duration: 0.4, ease: [0.16, 1, 0.3, 1] }}
                                 >
                                     <Link to="/" className="flex items-center group z-50">
-                                        <img src="/logo-large.png" alt="sitein2days.online logo" width={300} height={10} className="h-10 w-auto scale-[3] ml-[60px] object-contain" />
+                                        <img
+                                            src="/logo-large.png"
+                                            alt="sitein2days.online logo"
+                                            width={300}
+                                            height={10}
+                                            className="h-10 w-auto scale-[3] ml-[60px] object-contain"
+                                            fetchPriority="high"
+                                            loading="eager"
+                                        />
                                     </Link>
                                 </motion.div>
                             )}
@@ -121,7 +129,7 @@ const Navbar: React.FC<NavbarProps> = ({ onOpenContact }) => {
                             href="https://wa.me/919936169852"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="bg-[#25D366] hover:bg-[#20BA5A] text-white px-6 py-2.5 rounded-full font-bold text-sm transition-all transform hover:-translate-y-0.5 hover:shadow-lg active:translate-y-0"
+                            className="bg-[#075E54] hover:bg-[#128C7E] text-white px-6 py-2.5 rounded-full font-bold text-sm transition-all transform hover:-translate-y-0.5 hover:shadow-lg active:translate-y-0"
                         >
                             Connect on WhatsApp
                         </a>
