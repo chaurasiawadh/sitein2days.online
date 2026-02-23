@@ -98,9 +98,9 @@ const Navbar: React.FC<NavbarProps> = ({ onOpenContact }) => {
                                         <img
                                             src="/logo-large.png"
                                             alt="sitein2days.online logo"
-                                            width={300}
-                                            height={10}
-                                            className="h-10 w-auto scale-[3] ml-[60px] object-contain"
+                                            width={200}
+                                            height={50}
+                                            className="h-10 w-auto object-contain"
                                             fetchPriority="high"
                                             loading="eager"
                                         />
