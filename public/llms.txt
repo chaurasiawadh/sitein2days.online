@@ -1,0 +1,27 @@
+# sitein2days.online
+
+> Your Complete Digital Partner for AI, Shopify & Data. From custom AI agents and Shopify development to Power BI dashboards and marketing automation. Scale your operations with sitein2days.online.
+
+sitein2days.online is a digital agency offering specialized services to transform businesses using cutting-edge technologies.
+
+## Core Services
+
+- **Custom AI Automation**: Build and deploy intelligent AI agents tailored to specific business needs to streamline operations.
+- **Shopify Development**: Create, customize, and optimize top-tier e-commerce experiences to boost sales.
+- **Data Analytics (Power BI)**: Deliver actionable insights through professional data dashboards and reporting.
+
+## Key Pages
+
+- [Home](https://sitein2days.online/)
+- [About Us](https://sitein2days.online/about)
+- [Services](https://sitein2days.online/services)
+- [Portfolio](https://sitein2days.online/portfolio)
+- [Contact](https://sitein2days.online/contact)
+- [FAQ](https://sitein2days.online/faq)
+- [Policy](https://sitein2days.online/policy)
+- [Affiliate](https://sitein2days.online/affiliate)
+
+## Technical Details
+
+- **Robots.txt**: [https://sitein2days.online/robots.txt](https://sitein2days.online/robots.txt)
+- **Sitemap**: [https://sitein2days.online/sitemap.xml](https://sitein2days.online/sitemap.xml)
