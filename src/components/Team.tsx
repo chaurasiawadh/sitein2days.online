@@ -48,7 +48,7 @@ const Team: React.FC = () => {
         },
         {
             name: "Krishan Pal Jaiswal (KP Jindal)",
-            role: "Graphic Designer",
+            role: "Senior Graphic Designer",
             experience: "12+",
             image: "/team/kp-jindal.png",
             linkedin: "https://www.linkedin.com/in/kp-jaiswal-580b26101"
@@ -59,6 +59,13 @@ const Team: React.FC = () => {
             experience: "6+",
             image: "/team/abhay-chaurasia.png",
             linkedin: "https://www.linkedin.com/in/abhay-chaurasia-292a82255/"
+        },
+        {
+            name: "Prem",
+            role: "Photographer & Graphic Designer",
+            experience: "12+",
+            image: "/team/prem-gaud.png",
+            linkedin: "https://www.linkedin.com/in/prem-gaud-a2a4543a1/"
         }, {
             name: "Pratham Srivastava",
             role: "AI Expert",
