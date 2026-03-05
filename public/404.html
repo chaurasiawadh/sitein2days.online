@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>sitein2days.online</title>
+    <script>
+      // Single Page App redirect for GitHub Pages
+      // Encodes the path, query, and hash into a single query param
+      // so the main index.html can decode and restore the full URL.
+      var l = window.location;
+      l.replace(
+        l.protocol +
+          '//' +
+          l.hostname +
+          (l.port ? ':' + l.port : '') +
+          '/' +
+          '?p=' +
+          encodeURIComponent(
+            l.pathname.slice(1) +
+              (l.search ? '&q=' + encodeURIComponent(l.search.slice(1)) : '') +
+              (l.hash ? '&h=' + encodeURIComponent(l.hash.slice(1)) : '')
+          )
+      );
+    </script>
+  </head>
+  <body></body>
+</html>
