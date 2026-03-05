@@ -40,6 +40,20 @@ const Team: React.FC = () => {
             linkedin: "https://www.linkedin.com/in/shahbaaz-ali-77166417a/"
         },
         {
+            name: "Rahul Singh",
+            role: "Full Stack Developer",
+            experience: "5+",
+            image: "/team/rahul-singh.png",
+            linkedin: "https://www.linkedin.com/in/frontendrahul"
+        },
+        {
+            name: "Krishan Pal Jaiswal (KP Jindal)",
+            role: "Graphic Designer",
+            experience: "12+",
+            image: "/team/kp-jindal.png",
+            linkedin: "https://www.linkedin.com/in/kp-jaiswal-580b26101"
+        },
+        {
             name: "Abhay Chaurasia",
             role: "E-commerce and Digital Marketing",
             experience: "6+",
