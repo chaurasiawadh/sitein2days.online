@@ -1,8 +1,8 @@
 import React from 'react';
 import { ArrowRight, Check } from 'lucide-react';
-import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { SERVICES } from '../../constants';
+import { useAnimeStaggerReveal } from '../hooks/useAnime';
 
 // Define color schemes for each service using solid, professional colors
 const colorSchemes = [
@@ -51,6 +51,11 @@ const colorSchemes = [
 ];
 
 const Services: React.FC = () => {
+    const containerRef = useAnimeStaggerReveal<HTMLDivElement>('.service-card', {
+        translateY: 20,
+        staggerDelay: 100
+    });
+
     return (
         <section id="services" className="py-32 bg-white">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -64,17 +69,13 @@ const Services: React.FC = () => {
                     </div>
                 </div>
 
-                <div className="grid lg:grid-cols-3 gap-8">
+                <div ref={containerRef} className="grid lg:grid-cols-3 gap-8">
                     {SERVICES.map((service, index) => {
                         const colors = colorSchemes[index % colorSchemes.length];
                         return (
-                            <motion.div
+                            <div
                                 key={service.id}
-                                initial={{ opacity: 0, y: 20 }}
-                                whileInView={{ opacity: 1, y: 0 }}
-                                viewport={{ once: true, margin: "-50px" }}
-                                transition={{ duration: 0.5, delay: index * 0.1 }}
-                                className={`group relative flex flex-col bg-white rounded-3xl p-8 transition-colors duration-300 border border-gray-100 hover:border-transparent hover:shadow-[0_20px_40px_-15px_rgba(0,0,0,0.1)] overflow-hidden`}
+                                className={`service-card group relative flex flex-col bg-white rounded-3xl p-8 transition-colors duration-300 border border-gray-100 hover:border-transparent hover:shadow-[0_20px_40px_-15px_rgba(0,0,0,0.1)] overflow-hidden`}
                             >
                                 {/* Hover Bottom Border */}
                                 <div className={`absolute bottom-0 left-0 w-full h-1 ${colors.bg} transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left`} />
@@ -107,7 +108,7 @@ const Services: React.FC = () => {
                                     {service.ctaText}
                                     <ArrowRight className="w-4 h-4 ml-1 group-hover/link:translate-x-1 transition-transform" />
                                 </Link>
-                            </motion.div>
+                            </div>
                         );
                     })}
                 </div>

@@ -1,8 +1,13 @@
 import React from 'react';
-import { motion } from 'framer-motion';
 import { PROCESS_STEPS } from '../../constants';
+import { useAnimeStaggerReveal } from '../hooks/useAnime';
 
 const Process: React.FC = () => {
+    const containerRef = useAnimeStaggerReveal<HTMLDivElement>('.process-card', {
+        translateY: 20,
+        staggerDelay: 100
+    });
+
     return (
         <section id="culture" className="py-24 bg-gray-50 relative overflow-hidden">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -18,7 +23,7 @@ const Process: React.FC = () => {
                 </div>
 
                 {/* Compact Process Grid */}
-                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div ref={containerRef} className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
                     {PROCESS_STEPS.map((step, index) => {
                         const colors = [
                             { bg: 'bg-purple-600', text: 'text-purple-600', border: 'group-hover:border-purple-200' },
@@ -31,13 +36,9 @@ const Process: React.FC = () => {
                         const color = colors[index % colors.length];
 
                         return (
-                            <motion.div
+                            <div
                                 key={step.id}
-                                initial={{ opacity: 0, y: 20 }}
-                                whileInView={{ opacity: 1, y: 0 }}
-                                viewport={{ once: true, margin: "-50px" }}
-                                transition={{ duration: 0.5, delay: index * 0.1 }}
-                                className={`group relative bg-white rounded-2xl p-8 hover:shadow-xl transition-all duration-300 border border-gray-100 hover:border-transparent overflow-hidden`}
+                                className={`process-card group relative bg-white rounded-2xl p-8 hover:shadow-xl transition-all duration-300 border border-gray-100 hover:border-transparent overflow-hidden`}
                             >
                                 {/* Number Badge */}
                                 <div className="absolute top-6 right-6 text-5xl font-black text-gray-100 group-hover:text-gray-50 transition-colors pointer-events-none select-none">
@@ -56,7 +57,7 @@ const Process: React.FC = () => {
                                         {step.description}
                                     </p>
                                 </div>
-                            </motion.div>
+                            </div>
                         );
                     })}
                 </div>

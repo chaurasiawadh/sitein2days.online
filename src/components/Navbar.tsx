@@ -2,10 +2,10 @@
 
 import React, { useState, useEffect } from 'react';
 import { Menu, X, ArrowLeft } from 'lucide-react';
-import { motion, AnimatePresence } from 'framer-motion';
 import { Link, useLocation } from 'react-router-dom';
 import { NAV_LINKS } from '../../constants';
 import MobileMenu from './MobileMenu';
+import { useAnimeHover } from '../hooks/useAnime';
 
 interface NavbarProps {
     onOpenContact?: () => void;
@@ -18,6 +18,7 @@ const Navbar: React.FC<NavbarProps> = ({ onOpenContact }) => {
     const [lastScrollY, setLastScrollY] = useState(0);
     const location = useLocation();
     const pathname = location.pathname;
+    const ctaRef = useAnimeHover<HTMLAnchorElement>({ scale: 1.05, duration: 400 });
 
     useEffect(() => {
         const handleScroll = () => {
@@ -67,47 +68,29 @@ const Navbar: React.FC<NavbarProps> = ({ onOpenContact }) => {
                 >
                     {/* Logo / Back Button Section */}
                     <div className="flex items-center gap-2 z-50 min-w-[140px] sm:min-w-[200px]">
-                        <AnimatePresence mode="wait">
-                            {isPortfolioDetail ? (
-                                <motion.div
-                                    key="back-button"
-                                    initial={{ opacity: 0, y: 10, filter: "blur(4px)" }}
-                                    animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
-                                    exit={{ opacity: 0, y: -10, filter: "blur(4px)" }}
-                                    transition={{ duration: 0.4, ease: [0.16, 1, 0.3, 1] }}
-                                >
-                                    <Link
-                                        to="/portfolio"
-                                        className="flex items-center gap-2 text-gray-800 hover:text-black transition-colors group"
-                                    >
-                                        <div className="bg-gray-100 p-2 rounded-full group-hover:bg-gray-200 transition-colors">
-                                            <ArrowLeft size={16} />
-                                        </div>
-                                        <span className="font-bold text-sm sm:text-base whitespace-nowrap">Back to Portfolio</span>
-                                    </Link>
-                                </motion.div>
-                            ) : (
-                                <motion.div
-                                    key="logo"
-                                    initial={{ opacity: 0, y: -1, filter: "blur(4px)" }}
-                                    animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
-                                    exit={{ opacity: 0, y: 1, filter: "blur(4px)" }}
-                                    transition={{ duration: 0.4, ease: [0.16, 1, 0.3, 1] }}
-                                >
-                                    <Link to="/" className="flex items-center group z-50">
-                                        <img
-                                            src="/logo-large.webp"
-                                            alt="sitein2days.online logo"
-                                            width={200}
-                                            height={50}
-                                            className="h-10 w-auto object-contain"
-                                            fetchPriority="high"
-                                            loading="eager"
-                                        />
-                                    </Link>
-                                </motion.div>
-                            )}
-                        </AnimatePresence>
+                        {isPortfolioDetail ? (
+                            <Link
+                                to="/portfolio"
+                                className="flex items-center gap-2 text-gray-800 hover:text-black transition-colors group animate-in fade-in slide-in-from-top-2 duration-300"
+                            >
+                                <div className="bg-gray-100 p-2 rounded-full group-hover:bg-gray-200 transition-colors">
+                                    <ArrowLeft size={16} />
+                                </div>
+                                <span className="font-bold text-sm sm:text-base whitespace-nowrap">Back to Portfolio</span>
+                            </Link>
+                        ) : (
+                            <Link to="/" className="flex items-center group z-50 animate-in fade-in slide-in-from-top-2 duration-300">
+                                <img
+                                    src="/logo-large.webp"
+                                    alt="sitein2days.online logo"
+                                    width={200}
+                                    height={50}
+                                    className="h-10 w-auto object-contain"
+                                    fetchPriority="high"
+                                    loading="eager"
+                                />
+                            </Link>
+                        )}
                     </div>
 
                     {/* Desktop Nav */}
@@ -126,10 +109,11 @@ const Navbar: React.FC<NavbarProps> = ({ onOpenContact }) => {
                     {/* CTA Button */}
                     <div className="hidden md:flex items-center">
                         <a
+                            ref={ctaRef}
                             href="https://wa.me/919936169852"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="bg-[#075E54] hover:bg-[#128C7E] text-white px-6 py-2.5 rounded-full font-bold text-sm transition-all transform hover:-translate-y-0.5 hover:shadow-lg active:translate-y-0"
+                            className="bg-[#075E54] hover:bg-[#128C7E] text-white px-6 py-2.5 rounded-full font-bold text-sm"
                         >
                             Connect on WhatsApp
                         </a>

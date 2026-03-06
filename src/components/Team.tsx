@@ -1,6 +1,6 @@
 import React from 'react';
 import { Linkedin } from 'lucide-react';
-import { motion } from 'framer-motion';
+import { useAnimeStaggerReveal, useAnimeReveal } from '../hooks/useAnime';
 
 interface TeamMember {
     name: string;
@@ -90,11 +90,24 @@ const Team: React.FC = () => {
         { role: "Marketing", count: "6+" }
     ];
 
+    const teamMembersRef = useAnimeStaggerReveal<HTMLDivElement>('.team-card', {
+        translateY: 20,
+        staggerDelay: 100
+    });
+
+    const teamStatsRef = useAnimeStaggerReveal<HTMLDivElement>('.stat-card', {
+        translateY: 20,
+        staggerDelay: 100
+    });
+
+    const headerRef = useAnimeReveal<HTMLDivElement>({ translateY: 20 });
+    const statsHeaderRef = useAnimeReveal<HTMLDivElement>({ translateY: 20 });
+
     return (
         <section id="team" className="py-20 bg-gradient-to-b from-white to-gray-50 overflow-hidden">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 {/* Header */}
-                <div className="text-center max-w-3xl mx-auto mb-16">
+                <div ref={headerRef} className="text-center max-w-3xl mx-auto mb-16 opacity-0">
                     <span className="text-black font-bold tracking-wider uppercase text-sm border border-black rounded-full px-3 py-1 bg-white mb-6 inline-block">
                         Meet the Team
                     </span>
@@ -110,15 +123,11 @@ const Team: React.FC = () => {
                 </div>
 
                 {/* Team Members Grid */}
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-20">
+                <div ref={teamMembersRef} className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-20">
                     {teamMembers.map((member, idx) => (
-                        <motion.div
+                        <div
                             key={idx}
-                            initial={{ opacity: 0, y: 20 }}
-                            whileInView={{ opacity: 1, y: 0 }}
-                            viewport={{ once: true }}
-                            transition={{ duration: 0.5, delay: idx * 0.1 }}
-                            className="bg-white rounded-3xl p-6 border border-gray-100 hover:shadow-xl hover:-translate-y-2 transition-all duration-300 group"
+                            className="team-card bg-white rounded-3xl p-6 border border-gray-100 hover:shadow-xl hover:-translate-y-2 transition-all duration-300 group"
                         >
                             {/* Profile Image */}
                             <div className="relative w-32 h-32 mx-auto mb-6">
@@ -161,19 +170,13 @@ const Team: React.FC = () => {
                                     </a>
                                 )}
                             </div>
-                        </motion.div>
+                        </div>
                     ))}
                 </div>
 
                 {/* Team Statistics Section */}
-                <motion.div
-                    initial={{ opacity: 0, y: 20 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 0.6 }}
-                    className="mt-20"
-                >
-                    <div className="text-center mb-12">
+                <div className="mt-20">
+                    <div ref={statsHeaderRef} className="text-center mb-12 opacity-0">
                         <h3 className="text-3xl md:text-4xl font-black text-black mb-4">
                             Our Extended Team
                         </h3>
@@ -182,15 +185,11 @@ const Team: React.FC = () => {
                         </p>
                     </div>
 
-                    <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
+                    <div ref={teamStatsRef} className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
                         {teamStats.map((stat, idx) => (
-                            <motion.div
+                            <div
                                 key={idx}
-                                initial={{ opacity: 0, scale: 0.9 }}
-                                whileInView={{ opacity: 1, scale: 1 }}
-                                viewport={{ once: true }}
-                                transition={{ duration: 0.4, delay: idx * 0.1 }}
-                                className="bg-gradient-to-br from-purple-50 to-pink-50 rounded-2xl p-6 text-center border border-purple-100 hover:shadow-lg hover:scale-105 transition-all duration-300"
+                                className="stat-card bg-gradient-to-br from-purple-50 to-pink-50 rounded-2xl p-6 text-center border border-purple-100 hover:shadow-lg hover:scale-105 transition-all duration-300"
                             >
                                 <div className="text-4xl font-black text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-pink-500 mb-2">
                                     {stat.count}
@@ -198,10 +197,10 @@ const Team: React.FC = () => {
                                 <div className="text-sm font-semibold text-gray-700">
                                     {stat.role}
                                 </div>
-                            </motion.div>
+                            </div>
                         ))}
                     </div>
-                </motion.div>
+                </div>
             </div>
         </section>
     );

@@ -12,6 +12,9 @@ export default defineConfig({
       '@': path.resolve(__dirname, './src'),
     },
   },
+  optimizeDeps: {
+    force: true,
+  },
   build: {
     outDir: 'dist',
     minify: 'terser',
